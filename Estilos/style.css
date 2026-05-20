@@ -1,0 +1,104 @@
+
+
+/*CONFIGURAÇÕES GERAIS (all)*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO*/
+header{
+    height: 95vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 10px;
+
+    background-color: brown;
+
+}
+#header_entry{
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: blue;
+}
+#header_entry span{
+    color: white;
+} 
+#foto_entry{
+    width: 60%;
+    height: 75%;
+    margin-top: 50px;
+
+    background-image: url(../Recursos/Gemini_Generated_Image_il7j7xil7j7xil7j.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#info_entry{
+    width: 90%;
+    height: 20%;
+    margin-bottom: 50px;
+
+    background-color: aqua;
+    white-space: nowrap;
+}
+#info_entry h1 {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 2em ;
+}
+#info_entry h2 {
+    text-align: end;
+    font-size: 1.7em;
+}
+
+/* PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS*/
+nav{
+    min-height: 5vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    background-color: aqua;
+}
+main{
+    background-color: yellow;
+}
+#perfil{
+    min-height: 95vh;
+    background-color: blueviolet;
+}
+#skills_tools{
+    min-height: 95vh;
+    background-color: blue;
+}
+#projetos{
+    min-height: 95vh;
+    background-color: yellow;
+}
+#contato{
+    min-height: 85vh;
+    background-color: white;
+}
+
+/* PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE*/
+footer{
+    min-height: 10vh;
+    background-color: green;
+}
