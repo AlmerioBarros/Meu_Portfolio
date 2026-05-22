@@ -15,17 +15,16 @@
 </head>
 
 <body>
-    <header class="entry_container">
-        <div id="header_entry">
+    <header id="hero_container">
+        <div id="header_hero">
             <span>Almerio</span>
             <span>Icone mudar tema</span>
 
-            
         </div>
 
-        <div id="foto_entry"></div>
+        <div id="foto_hero"></div>
 
-        <div id="info_entry">
+        <div id="info_hero">
             <h1>Almério Barros da Silva Filho</h1>
             <h2>Engenheiro de Software</h2>
         </div>
@@ -41,38 +40,60 @@
     </nav>
 
     <main>
-        <article id="perfil">
-            <section>
-                perfil
+        <!-- SEÇÃO: SOBRE MIM -->
+        <section id="perfil">
+            <h2>Sobre mim</h2>
+            <div>
+                <p>Introdução do que eu sou e gosto</p>
 
-            </section>
-        </article>
+                <div>
+                    gif ou sequencia de fotos
+                </div>
+            </div>
+        </section>
 
-        <article id="skills_tools">
-            <section>
-                skills e tools
+        <!-- SEÇÃO: SKILLS -->
+        <section id="skills_tools">
+            <h2>Skills e Tools</h2>
+            <div>
+                logo das ferramentas e conhecimentos
+            </div>
+        </section>
 
-            </section>
-        </article>
+        <!-- SEÇÃO: PROJETOS -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="filtros">
+                opções de filtragem
+            </div>
 
-        <article id="projetos">
-            <section>
-                projetos
+            <div class="lista_projetos">
+                <article class="card_projeto">
+                    <h3>Nome do Projeto 1</h3>
+                    <p>Descrição do projeto...</p>
+                </article>
+                <article class="card_projeto">
+                    <h3>Nome do Projeto 2</h3>
+                    <p>Descrição do projeto...</p>
+                </article>
+            </div>
+        </section>
 
-            </section>
-        </article>
-
-        <article id="contato">
-            <section>
-                enviar email
-
-            </section>
-        </article>
+        <!-- SEÇÃO: CONTATO -->
+        <section id="contato">
+            <h2>Cafézinho</h2>
+            <div>
+                estrutura de email
+            </div>
+        </section>
 
     </main>
 
     <footer>
-
+        <h1>Contatos</h1>
+        <div>
+            Contatos
+        </div>
     </footer>
 
     <script src="Scripts/index.js" defer type="module"></script>
