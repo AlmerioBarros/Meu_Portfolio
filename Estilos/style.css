@@ -15,7 +15,7 @@ body{
 
 }
 
-/* PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO*/
+/* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
     height: 95vh;
 
@@ -68,10 +68,9 @@ header{
 }
 
 
-
-/* PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS*/
+/* ------- PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS --------*/
 nav{
-    min-height: 5vh;
+    height: 5vh;
 
     display: flex;
     flex-flow: row nowrap;
@@ -84,38 +83,87 @@ main{
     background-color: yellow;
 }
 section{
+    height: 95vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    row-gap: 10px;
 }
-#perfil{
-    min-height: 95vh;
-    background-color: blueviolet;
+section > h2{
+    height: 10%;        /*  VOCE TEM 90% DA ALTURA DA TELA PARA TRABALHAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#perfil > div {
+section > div {
     width: 80%;
+    height: 90%;
     border: 4px solid black;
 }
+
+/* PERFIL */
+
+#perfil{
+    background-color: blueviolet;
+}
+
+/* SKILLS E TOOLS*/
+
 #skills_tools{
-    min-height: 95vh;
     background-color: blue;
 }
+
+/* PROJETOS */
+
 #projetos{
-    min-height: 95vh;
     background-color: yellow;
 }
+.filtros{
+    width: 80%;
+    height: 5%;
+    border: 4px solid black;
+}
+.lista_projetos{
+    width: 80%;
+    height: 85%;
+    border: 4px solid black;
+}
+
+/* CONTATO */
+
 #contato{
-    min-height: 85vh;
+    height: 85vh;
     background-color: white;
+}
+#contato > p {
+    height: 5%;
+}
+
+#email{
+    width: 80%;
+    height: 85%;
+    border: 4px solid black;
 }
 
 
-
-/* PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE*/
+/* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    min-height: 10vh;
+    height: 10vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 10px;
 
     background-color: green;
 
     text-align: center;
+}
+footer > div{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
