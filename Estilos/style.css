@@ -17,7 +17,7 @@ body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    height: 95vh;
+    height: 95vh;   /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
@@ -29,7 +29,7 @@ header{
 }
 #header_hero{
     width: 100%;
-    height: 5%;
+    height: 5%;       /*43px na media de altura*/    /*823*/
 
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ header{
 
 /* ------- PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS --------*/
 nav{
-    height: 5vh;
+    height: 5vh;   /*46pix de altura, no maximo*/
 
     display: flex;
     flex-flow: row nowrap;
