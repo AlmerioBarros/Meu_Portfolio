@@ -5,6 +5,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 
 
     font-family: Arial, Helvetica, sans-serif;
@@ -17,77 +18,80 @@ body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    height: 95vh;   /* 866px de altura, no maximo*/
+    height: 100dvh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
     align-items: center;
-    row-gap: 10px;
 
     background-color: brown;
 
 }
 #header_hero{
-    width: 100%;
-    height: 5%;       /*43px na media de altura*/    /*823*/
+    width: 100%;    /*43px na media de altura*/    /*823*/
 
     display: flex;
     justify-content: space-between;
 
+    padding: 15px 20px;
     background-color: blue;
 }
 #header_hero span{
     color: white;
 } 
-#foto_hero{
-    width: 60%;
-    height: 75%;
-    margin-top: 50px;
-
-    background-image: url(../Recursos/Gemini_Generated_Image_il7j7xil7j7xil7j.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 #info_hero{
     width: 90%;
-    height: 20%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center ;
+    align-items: center;
+
+    flex: 1;
+}
+#foto_hero{
+    width: clamp(200px, 60%, 400px);
+    height: clamp(250px, 70%, 450px);
     margin-bottom: 50px;
+}
+#nome_hero {
+    width: 100%;
+    text-align: center;
 
-    background-color: aqua;
     white-space: nowrap;
-}
-#info_hero h1 {
-    text-align: left;
-    font-weight: lighter;
-    font-size: 2em ;
-}
-#info_hero h2 {
-    text-align: end;
-    font-size: 1.7em;
-}
 
-
-/* ------- PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS --------*/
+    border: 2px solid black;
+}
 nav{
-    height: 5vh;   /*46pix de altura, no maximo*/
+    width: 100%; /*46pix de altura, no maximo*/
+    height: clamp(48px, 5dvh, 70px);
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
 
+    padding: 20px 0px;
     background-color: aqua;
+
 }
+
+
+/* ------- PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS --------*/
+
 main{
     background-color: yellow;
 }
 section{
-    height: 95vh;
+    min-height: clamp(500px, 95dvh, 900px);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    
     row-gap: 10px;
+    padding-bottom: 90px;
+
 }
 section > h2{
     height: 10%;        /*  VOCE TEM 90% DA ALTURA DA TELA PARA TRABALHAR*/
@@ -132,7 +136,7 @@ section > div {
 /* CONTATO */
 
 #contato{
-    height: 85vh;
+    min-height: clamp(300px, 85dvh, 700px);
     background-color: white;
 }
 #contato > p {
@@ -148,7 +152,7 @@ section > div {
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    height: 10vh;
+    height: 10dvh;
 
     display: flex;
     flex-flow: column nowrap;
