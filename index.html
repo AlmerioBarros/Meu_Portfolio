@@ -172,16 +172,27 @@
             <h2>Cafézinho</h2>
             <p> Mensagem amigavel para contato</p>
 
-            <div id="email">
-                estrutura de email      <!-- Precisa ser um form, fiquei com preguiça, fazer depois -->
-            </div>
+            <form id="email">
+                <label for="email_nome">Nome:</label>
+                <input type="text" id="email_nome" placeholder="Seu Nome">
+
+                <label for="email_email">Email:</label>
+                <input type="text" id="email_email" placeholder="Seu Email">
+
+                <label for="email_mensagem">Mensagem:</label>
+                <textarea name="email_mensagem" id="email_mensagem" placeholder="Sua Mensagem"></textarea>
+
+                <input type="button" value="Enviar Mensagem" id="btn_enviar">
+
+
+            </form>
 
         </section>
 
     </main>
 
     <footer>
-        <h2>Contatos</h2>
+        <h2>Entre em Contato:</h2>
 
         <div>
             <span>aaaaa</span>
