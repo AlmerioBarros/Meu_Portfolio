@@ -259,6 +259,19 @@ section > h2{
 
     transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+.card_titulo{
+    width: 100%;
+    position: relative;
+}
+.card_titulo >h3{
+    width: 100%;
+    text-align: center;
+    padding: 0px 35px;
+}
+.card_titulo > img {
+    position: absolute;
+    padding: 0px 5px;
+}
 .card_imagem{
     position: relative;
     width: 100%;
