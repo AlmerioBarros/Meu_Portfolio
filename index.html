@@ -140,13 +140,58 @@
                                                     <!-- SEÇÃO: PROJETOS -->
         <section id="projetos">
             <h2>Projetos e Trabalhos</h2>
-            <div class="filtros">
+
+            <button class="btn_filtros">
                 Filtrar Projetos
+            </button>
+
+            <div class="card_filtros">
+                <form id="form_filtros" class="container_filtros">
+                    <div class="card_filtros_header">
+                        <h3>Filtros</h3>
+                        <button>&times</button>
+                    </div>
+                    <p>Escolha os filtros que deseja utilizar na pesquisa de projetos</p>
+                    <p>Categoria: 1 escolha  Ferramentas: multipla escolha</p>
+                    <div class="grupo_filtro">
+                        <h4>Categorias</h4>
+                        <div>
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="categoria" value="web"> Web
+                            </label>
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="categoria" value="app"> App
+                            </label>
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="categoria" value="api"> API
+                            </label>
+                        </div>
+                    </div>
+                    <div class="grupo_filtro">
+                        <h4>Ferramentas</h4>
+                        <div>
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="ferramenta" value="html"> HTML
+                            </label>
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="ferramenta" value="javascript"> JavaScript
+                            </label>
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="ferramenta" value="node"> Node.js
+                            </label>
+                            <label class="item-checkbox">
+                                <input type="checkbox" name="ferramenta" value="python"> Python
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn_filtro_aplicar">Aplicar Filtros</button>
+                </form>
             </div>
 
             <div class="container_projetos">
 
-                <div class="filtros_usados">
+                <div class="filtros_usados ativo">
                     <span>Filtros usados: </span>
                     <span>aaaaa</span>
                     <span>bbbb</span>

@@ -206,27 +206,102 @@ section > h2{
     background-color: yellow;
     overflow: hidden;       /* esconde os .lista_projetos que não estão na tela*/
 }
-.filtros{
+.btn_filtros{
     width: 80%;
 
     text-align: center;
+    font-size: 1em;
 
-    padding: 5px;
-    border: 4px solid black;
+    padding: 5px 0px;
+
+    cursor: pointer;
 }
+.card_filtros {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    z-index: 1000;               /*faz com que ele fique na frente até dos elementos definidos como absolute, por ter um z maior*/
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.container_filtros {
+    background-color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding: 10px;
+    border-radius: 15px;
+}
+.card_filtros_header{
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    padding: 10px 0px;
+
+    background-color: blueviolet;
+}
+.card_filtros_header > button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.container_filtros > p {
+    background-color: aqua;
+    padding: 5px 0px;
+}
+.grupo_filtro{
+    width: 100%;
+    padding: 30px 0px 15px 0px;
+}
+.grupo_filtro > h4{
+    text-align: center;
+    padding-bottom: 20px ;
+}
+.grupo_filtro > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.btn_filtro_aplicar{
+    width: 50%;
+    padding: 5px;
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+
 .container_projetos{
     width: 100%;
-
     display: flex;
     flex-flow: column nowrap;
 
     flex: 1;
 }
 .filtros_usados{
-    display: block;                     /*deixe um tempo depois faça sumir*/
+    display: none;                     /*deixe um tempo depois faça sumir*/
+    height: 0px;
     background-color: lightpink;
     padding: 2px 0px 2px 6px;
-
+}
+.filtros_usados.ativo {
+    display: block;
+    height: auto;
 }
 .carousel_projetos{
     width: 200%;                   /* responsavel pelo espaçamento para a rolagem das divs .lista_projetos */
@@ -347,9 +422,15 @@ section > h2{
     background-color: green;
 }
 
+
+
 .card_imagem > img.ativo{
     opacity: 1;
     transition: opacity 0.8s ease-in-out;          /*faz a animação de troca de imagem do card usando a opacidade*/
+}
+.card_filtros.ativo {
+    opacity: 1;                                 /*faz o card_filtro aparecer*/
+    visibility: visible;
 }
 
 
@@ -407,6 +488,8 @@ section > h2{
     border-radius: 5px;
 
     font-size: 1em;
+
+    cursor: pointer;
 }
 
 
