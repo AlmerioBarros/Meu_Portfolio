@@ -125,11 +125,11 @@ section > h2{
 
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
 
     flex: 1;
 }
-.descricao_perfil > div{
+.descricao_texto{
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
 
@@ -138,7 +138,12 @@ section > h2{
 
     text-align: justify;
 }
-.descricao_perfil > img{
+.descricao_img{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
 }
 
@@ -177,13 +182,15 @@ section > h2{
     background-color: brown;
 }
 .skills_card h3{
-    padding-top: 20px;
+    padding-top: 50px;
     font-size: 2em;
+    background-color: blueviolet;
 }
 .skills_card p {
+    text-align: center;
     padding: 20px 0px;
 }
-.skills_card div:nth-of-type(1){
+.skills_nivel{
     width: 100%;
     display: flex;
     align-items: center;
@@ -192,11 +199,21 @@ section > h2{
 
     padding: 20px 0px;
 }
-.skills_card div:nth-of-type(2){
+.skills_icons{
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
     flex: 1;
 
     background-color: white;
+}
+.skills_icons div{
+    width: 45%;
+    height: 150px;
+    background-color: green;
 }
 
 
@@ -240,11 +257,12 @@ section > h2{
     background-color: white;
 
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
 
     padding: 10px;
     border-radius: 15px;
+    transform: translateX(-7px);               /*não sei pq mas ta torto para a direita, então puxei 7px para a esquerda*/
 }
 .card_filtros_header{
     width: 100%;
@@ -276,6 +294,8 @@ section > h2{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    padding: 0px 10px;
+    gap: 25px;
 }
 .btn_filtro_aplicar{
     width: 50%;
@@ -388,12 +408,14 @@ section > h2{
 
     border-radius: 5px;
     background-color: red;
+    cursor: pointer;
 }
 .card_btn_i{
     display: inline-flex;
     align-items: center;
 
     margin-top: 10px;
+    cursor: pointer;
 }
 .card_descricao{
     width: 100%;
@@ -404,7 +426,7 @@ section > h2{
     flex: 1;
 }
 .card_tolls{
-    width: 100%;
+    width: 98%;
     background-color: lightgreen;
 
     padding: 3px 3px;
