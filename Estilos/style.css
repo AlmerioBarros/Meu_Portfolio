@@ -182,7 +182,7 @@ section > h2{
     background-color: brown;
 }
 .skills_card h3{
-    padding-top: 50px;
+    padding: 25px 0px 25px 0px;
     font-size: 2em;
     background-color: blueviolet;
 }
@@ -199,10 +199,10 @@ section > h2{
 
     padding: 20px 0px;
 }
-.skills_icons{
+.skills_icons_container{
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
 
@@ -210,10 +210,27 @@ section > h2{
 
     background-color: white;
 }
-.skills_icons div{
-    width: 45%;
-    height: 150px;
+.skills_icons{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
     background-color: green;
+}
+.skills_icons div{
+    width: 100%;
+    padding: 10px;
+    row-gap: 15px;
+    column-gap: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: white;
+}
+.skills_icons img{
+    height: clamp(50px,70px,100px);
 }
 
 
