@@ -271,7 +271,7 @@ section > h2{
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 .container_filtros {
-    background-color: white;
+    background-color: blueviolet;
 
     display: flex;
     flex-flow: column wrap;
@@ -286,22 +286,37 @@ section > h2{
     position: relative;
     text-align: center;
 
-    padding: 10px 0px;
-
-    background-color: blueviolet;
+    padding: 10px 0px 15px 0px;
 }
 .card_filtros_header > button{
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 15px;
 }
-.container_filtros > p {
-    background-color: aqua;
-    padding: 5px 0px;
+.card_filtros_descricao{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 7px 5px;
+    row-gap: 10px;
+
+    background-color: white;
+}
+.card_filtros_descricao > p:first-child{
+    width: 100%;
+}
+.card_filtros_descricao > p {
+    text-align: center;
 }
 .grupo_filtro{
     width: 100%;
-    padding: 30px 0px 15px 0px;
+    padding: 20px 0px 30px 0px;
+
+    margin-top: 5px;
+
+    background-color: white;
 }
 .grupo_filtro > h4{
     text-align: center;
@@ -316,8 +331,11 @@ section > h2{
 }
 .btn_filtro_aplicar{
     width: 50%;
-    padding: 5px;
-    margin-top: 15px;
+    padding: 7px;
+    margin: 17px 0px 7px 0px;
+
+    border: 0px;
+    border-radius: 5px;
 
     cursor: pointer;
 }
@@ -366,7 +384,6 @@ section > h2{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    row-gap: 5px;
 
     overflow: hidden;
     border-radius: 20px;
@@ -381,11 +398,11 @@ section > h2{
 .card_titulo >h3{
     width: 100%;
     text-align: center;
-    padding: 0px 35px;
+    padding: 0px 35px 6px 35px;
 }
 .card_titulo > img {
     position: absolute;
-    padding: 0px 5px;
+    padding: 0px 5px 6px 5px;
 }
 .card_imagem{
     position: relative;
@@ -439,14 +456,16 @@ section > h2{
     background-color: lightblue;
     text-align: justify;
 
-    padding: 3px 3px;
+    padding: 5px;
     flex: 1;
 }
 .card_tolls{
-    width: 98%;
+    width: 100%;
+    border-radius: 0px 0px 12px 12px;
     background-color: lightgreen;
 
-    padding: 3px 3px;
+    padding: 5px;
+    margin-top: 4px;
 }
 .card_tolls > span {
     background-color: lightcoral;
