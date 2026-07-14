@@ -10,6 +10,24 @@
 
     font-family: Arial, Helvetica, sans-serif;
 }
+:root{
+    --bg-color: white;
+    --bg-color2: rgb(180, 180, 180);
+    --cor-primaria: blue;
+    --sombra-primaria: rgba(0, 0, 70, 0.514);
+    --cor-secundaria: lightblue;
+    --sombra-secundaria: rgba(78, 98, 105, 0.486);
+}
+
+.dark{
+    --bg-color: black;
+    --bg-color2: rgba(39, 39, 39, 0.781);
+    --cor-primaria: blue;
+    --sombra-primaria: rgba(0, 0, 70, 0.514);
+    --cor-secundaria: lightblue;
+    --sombra-secundaria: rgba(78, 98, 105, 0.486);
+}
+
 html,body{
     width: 100%;
     height: 100%;
@@ -28,7 +46,7 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    background-color: brown;
+    background-color: var(--bg-color);
 
     scroll-snap-align: start;
 
@@ -40,11 +58,14 @@ header{
     justify-content: space-between;
 
     padding: 15px 20px;
-    background-color: blue;
+    background-color: var(--cor-primaria);
 }
 #header_hero span{
     color: white;
 } 
+#btn_tema{
+    cursor: pointer;
+}
 #info_hero{
     width: 100%;
 
@@ -82,7 +103,7 @@ nav{
     align-items: center;
 
     padding: 20px 0px;
-    background-color: aqua;
+    background-color: var(--cor-secundaria);
 
 }
 
@@ -90,7 +111,7 @@ nav{
 /* ------- PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS --------*/
 
 main{
-    background-color: yellow;
+    background-color: var(--bg-color);
 }
 main > section{
     height: clamp(500px, 95dvh, 900px);
@@ -116,17 +137,19 @@ section > h2{
 /* PERFIL */
 
 #perfil{
-    background-color: blueviolet;
+    background-color: var(--bg-color);
 }
 .descricao_perfil{
     width: 90%;
-    border: 3px solid black;
+    border: 3px solid var(--cor-primaria);
     border-radius: 13px;
 
     display: flex;
     flex-flow: column nowrap;
 
     flex: 1;
+
+    background-color: var(--bg-color2);
 }
 .descricao_texto{
     width: 100%;
@@ -150,7 +173,7 @@ section > h2{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    background-color: blue;
+    background-color: var(--bg-color);
     overflow: hidden;         /* esconde os skills_cards que não estão na tela*/
 }
 .skills_carousel{
@@ -179,12 +202,11 @@ section > h2{
 
     padding: 10px;
 
-    background-color: brown;
+    background-color: var(--bg-color2);
 }
 .skills_card h3{
     padding: 25px 0px 25px 0px;
     font-size: 2em;
-    background-color: blueviolet;
 }
 .skills_card p {
     text-align: center;
@@ -207,8 +229,6 @@ section > h2{
     align-items: center;
 
     flex: 1;
-
-    background-color: white;
 }
 .skills_icons{
     width: 100%;
@@ -237,7 +257,7 @@ section > h2{
 /* PROJETOS */
 
 #projetos{
-    background-color: yellow;
+    background-color: var(--bg-color);
     overflow: hidden;       /* esconde os .lista_projetos que não estão na tela*/
 }
 .btn_filtros{
@@ -271,7 +291,7 @@ section > h2{
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 .container_filtros {
-    background-color: blueviolet;
+    background-color: var(--cor-primaria);
 
     display: flex;
     flex-flow: column wrap;
@@ -345,13 +365,14 @@ section > h2{
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    background-color: var(--bg-color2);
 
     flex: 1;
 }
 .filtros_usados{
     display: none;                     /*deixe um tempo depois faça sumir*/
     height: 0px;
-    background-color: lightpink;
+    background-color: yellow;
     padding: 2px 0px 2px 6px;
 }
 .filtros_usados.ativo {
@@ -363,8 +384,6 @@ section > h2{
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-
-    background-color: blue;
 
     flex: 1;
 }
@@ -378,7 +397,7 @@ section > h2{
     row-gap: 15px;
 }
 .card_projeto{
-    width: 450px;
+    width: 92%;   /*450px*/
     height: 300px ;
 
     display: flex;
@@ -389,7 +408,7 @@ section > h2{
     border-radius: 20px;
 
     padding: 7px;
-    background-color: blueviolet;
+    background-color: blueviolet;        /*A cor depende do tipo de projeto*/
 }
 .card_titulo{
     width: 100%;
@@ -409,7 +428,7 @@ section > h2{
     width: 100%;       /* 435px mais ou menos */
     height: 110px;
     overflow: hidden;
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
 }
 .card_imagem > img{
     position: absolute;
@@ -436,7 +455,7 @@ section > h2{
     gap: 3px;
 
     margin-top: 5px;
-    padding: 3px;
+    padding: 2px 2px 2px 5px;
 
     text-decoration: none;
 
@@ -447,13 +466,15 @@ section > h2{
 .card_btn_i{
     display: inline-flex;
     align-items: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.658);
 
     margin-top: 10px;
     cursor: pointer;
 }
 .card_descricao{
     width: 100%;
-    background-color: lightblue;
+    background-color: var(--bg-color);
     text-align: justify;
 
     padding: 5px;
@@ -462,7 +483,7 @@ section > h2{
 .card_tolls{
     width: 100%;
     border-radius: 0px 0px 12px 12px;
-    background-color: lightgreen;
+    background-color: var(--bg-color);
 
     padding: 5px;
     margin-top: 4px;
@@ -497,7 +518,7 @@ section > h2{
 
 #contato{
     height: clamp(500px, 80dvh, 900px);
-    background-color: blue;
+    background-color: var(--bg-color);
 
     scroll-snap-align: start;
 }
@@ -516,7 +537,6 @@ section > h2{
 }
 #email > label{
     padding-top: 10px;
-    color: green;
 }
 #email_nome{
     padding: 5px 0px 5px 5px;
@@ -559,7 +579,7 @@ footer{
     flex-flow: column nowrap;
     align-items: center;
 
-    background-color: green;
+    background-color: var(--cor-primaria);
     padding: 15px 0px;
 
     text-align: center;
