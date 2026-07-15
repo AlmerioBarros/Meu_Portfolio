@@ -11,21 +11,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 :root{
+    --color1: white;
+    --color2: black;
     --bg-color: white;
-    --bg-color2: rgb(180, 180, 180);
-    --cor-primaria: blue;
-    --sombra-primaria: rgba(0, 0, 70, 0.514);
-    --cor-secundaria: lightblue;
-    --sombra-secundaria: rgba(78, 98, 105, 0.486);
+    --bg-color2: rgb(201, 201, 201);
+    --cor-primaria: #004C81;    /*#004C81*/
+    --cor-secundaria: #50b6ff;     /*#50b6ff*/
+    --sombra: rgba(0, 0, 0, 0.452);
+
 }
 
 .dark{
+    --color1: black;
+    --color2: white;
     --bg-color: black;
-    --bg-color2: rgba(39, 39, 39, 0.781);
-    --cor-primaria: blue;
-    --sombra-primaria: rgba(0, 0, 70, 0.514);
-    --cor-secundaria: lightblue;
-    --sombra-secundaria: rgba(78, 98, 105, 0.486);
+    --bg-color2: rgba(100, 100, 100, 0.705);
+    --cor-primaria: rgb(160, 160, 160);    /*#004C81*/
+    --cor-secundaria: #50b6ff;     /*#50b6ff*/
+    --sombra: rgba(0, 0, 0, 0.452);
 }
 
 html,body{
@@ -61,7 +64,7 @@ header{
     background-color: var(--cor-primaria);
 }
 #header_hero span{
-    color: white;
+    color: var(--color1);
 } 
 #btn_tema{
     cursor: pointer;
@@ -89,11 +92,14 @@ header{
     font-weight: lighter;
     font-size: 2em;
     padding-bottom: 10px;
+    color: var(--color2);
 }
 #nome_hero h2 {
     font-size: 1.7em;
+    color: var(--cor-secundaria);
 }
 nav{
+    /*position: fixed;*/
     width: 100%; /*46pix de altura, no maximo*/
     height: clamp(48px, 5dvh, 70px);
 
@@ -103,7 +109,8 @@ nav{
     align-items: center;
 
     padding: 20px 0px;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    color: var(--color1);
 
 }
 
@@ -124,12 +131,14 @@ main > section{
 
     scroll-snap-align: start;
 
+    color: var(--color2);
+
 }
 section > h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 20px;
 
     font-size: 2em;
 }
@@ -161,6 +170,9 @@ section > h2{
 
     text-align: justify;
 }
+.descricao_texto > h3 {
+    color: var(--cor-secundaria);
+}
 .descricao_img{
     width: 100%;
 
@@ -176,6 +188,12 @@ section > h2{
     background-color: var(--bg-color);
     overflow: hidden;         /* esconde os skills_cards que não estão na tela*/
 }
+.skills_tools_descricao{
+    text-align: center;
+}
+.skills_tools_descricao > p{
+    padding: 5px 0px;
+}
 .skills_carousel{
     width: 300%;              /* 100% para cada skills_card que voce tiver*/
     display: flex;
@@ -184,6 +202,9 @@ section > h2{
     align-self: start;
 
     flex: 1;
+
+    border-top: 2px solid var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
 }
 .skills_bolinhas {
     width: 100%;
@@ -192,7 +213,7 @@ section > h2{
     justify-content: center;
     column-gap: 10px;
 
-    background-color: green;
+
 }
 .skills_card {
     width: 100%;
@@ -205,12 +226,11 @@ section > h2{
     background-color: var(--bg-color2);
 }
 .skills_card h3{
-    padding: 25px 0px 25px 0px;
     font-size: 2em;
 }
 .skills_card p {
     text-align: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 .skills_nivel{
     width: 100%;
@@ -219,7 +239,7 @@ section > h2{
     justify-content: center;
     column-gap: 20px;
 
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 .skills_icons_container{
     width: 100%;
@@ -261,14 +281,17 @@ section > h2{
     overflow: hidden;       /* esconde os .lista_projetos que não estão na tela*/
 }
 .btn_filtros{
-    width: 80%;
+    width: 70%;
 
     text-align: center;
     font-size: 1em;
 
     padding: 5px 0px;
 
+    background-color: var(--color1);
+    border: 3px solid var(--cor-primaria);
     cursor: pointer;
+    color: var(--color2);
 }
 .card_filtros {
     position: fixed;
@@ -368,12 +391,16 @@ section > h2{
     background-color: var(--bg-color2);
 
     flex: 1;
+
+    border-top: 2px solid var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
 }
 .filtros_usados{
     display: none;                     /*deixe um tempo depois faça sumir*/
     height: 0px;
     background-color: yellow;
     padding: 2px 0px 2px 6px;
+    color: black;
 }
 .filtros_usados.ativo {
     display: block;
@@ -497,8 +524,6 @@ section > h2{
     align-items: center;
     justify-content: center;
     column-gap: 10px;
-
-    background-color: green;
 }
 
 
@@ -583,6 +608,7 @@ footer{
     padding: 15px 0px;
 
     text-align: center;
+    color: var(--color1);
 }
 footer > div{
     width: 100%;
