@@ -14,21 +14,25 @@
     --color1: white;
     --color2: black;
     --bg-color: white;
-    --bg-color2: rgb(201, 201, 201);
-    --cor-primaria: #004C81;    /*#004C81*/
+    --bg-color2: rgba(226, 226, 226, 0.76);
+    --cor-primaria: #0077cc;    /*#004C81*/
     --cor-secundaria: #50b6ff;     /*#50b6ff*/
-    --sombra: rgba(0, 0, 0, 0.452);
+    --sombra: rgba(0, 0, 0, 0.26);
+    --cor-tercearia : #002f50e3;
+    --white-t: white;
 
 }
 
 .dark{
     --color1: black;
-    --color2: white;
+    --color2: rgb(236, 236, 236);
     --bg-color: black;
-    --bg-color2: rgba(100, 100, 100, 0.705);
-    --cor-primaria: rgb(160, 160, 160);    /*#004C81*/
-    --cor-secundaria: #50b6ff;     /*#50b6ff*/
+    --bg-color2: rgba(100, 100, 100, 0.849);
+    --cor-primaria: rgb(97, 0, 97);    /*#004C81*/
+    --cor-secundaria: rgb(158, 0, 158);     /*#50b6ff*/
     --sombra: rgba(0, 0, 0, 0.452);
+    --cor-tercearia : rgb(231, 0, 231) ;
+    --white-t: rgb(236, 236, 236);
 }
 
 html,body{
@@ -64,7 +68,7 @@ header{
     background-color: var(--cor-primaria);
 }
 #header_hero span{
-    color: var(--color1);
+    color: var(--white-t);
 } 
 #btn_tema{
     cursor: pointer;
@@ -110,7 +114,7 @@ nav{
 
     padding: 20px 0px;
     background-color: var(--cor-primaria);
-    color: var(--color1);
+    color: var(--white-t);
 
 }
 
@@ -221,9 +225,19 @@ section > h2{
     flex-flow: column nowrap;
     align-items: center;
 
-    padding: 10px;
-
-    background-color: var(--bg-color2);
+    padding: 10px;;
+}
+.skills_card.web{
+    background-color: rgba(150, 0, 0, 0.918);
+}
+.skills_card.app{
+    background-color: rgba(0, 88, 0, 0.925);
+}
+.skills_card.api{
+    background-color: rgba(150, 150, 0, 0.897);
+}
+.skills_card.art{
+    background-color: rgba(179, 128, 136, 0.932);
 }
 .skills_card h3{
     font-size: 2em;
@@ -345,7 +359,8 @@ section > h2{
     padding: 7px 5px;
     row-gap: 10px;
 
-    background-color: white;
+    background-color: var(--white-t);
+    color: black;
 }
 .card_filtros_descricao > p:first-child{
     width: 100%;
@@ -353,13 +368,17 @@ section > h2{
 .card_filtros_descricao > p {
     text-align: center;
 }
+.card_filtros_descricao span {
+    color: var(--cor-secundaria);
+}
 .grupo_filtro{
     width: 100%;
     padding: 20px 0px 30px 0px;
 
     margin-top: 5px;
 
-    background-color: white;
+    background-color: var(--white-t);
+    color: black;
 }
 .grupo_filtro > h4{
     text-align: center;
@@ -381,6 +400,13 @@ section > h2{
     border-radius: 5px;
 
     cursor: pointer;
+    color: black;
+    background-color: var(--white-t);
+}
+.btn_filtro_aplicar:hover{
+
+    background-color: var(--cor-tercearia);
+    color: rgb(236, 236, 236);
 }
 
 
@@ -398,7 +424,7 @@ section > h2{
 .filtros_usados{
     display: none;                     /*deixe um tempo depois faça sumir*/
     height: 0px;
-    background-color: yellow;
+    background-color: var(--cor-secundaria);
     padding: 2px 0px 2px 6px;
     color: black;
 }
@@ -562,6 +588,8 @@ section > h2{
 }
 #email > label{
     padding-top: 10px;
+    color: var(--cor-secundaria);
+    text-shadow: 0px 1px 1px var(--sombra);
 }
 #email_nome{
     padding: 5px 0px 5px 5px;
@@ -608,7 +636,7 @@ footer{
     padding: 15px 0px;
 
     text-align: center;
-    color: var(--color1);
+    color: rgb(236, 236, 236);
 }
 footer > div{
     width: 100%;
