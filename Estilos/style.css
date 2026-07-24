@@ -20,7 +20,6 @@
     --sombra: rgba(0, 0, 0, 0.26);
     --cor-tercearia : #002f50e3;
     --white-t: white;
-
 }
 
 .dark{
@@ -40,8 +39,7 @@ html,body{
     height: 100%;
 
     scroll-snap-type: y mandatory;
-    scroll-padding-top: clamp(48px, 5dvh, 70px);
-
+    scroll-padding-top: clamp(48px, 5dvh, 70px);    
 }
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
@@ -56,24 +54,42 @@ header{
     background-color: var(--bg-color);
 
     scroll-snap-align: start;
-
 }
-#header_hero{
+.header_hero{
     width: 100%;    /*43px na media de altura*/    /*823*/
 
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
 
     padding: 15px 20px;
     background-color: var(--cor-primaria);
 }
-#header_hero span{
+.header_hero span{
     color: var(--white-t);
 } 
 #btn_tema{
     cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 15px;
+    border: 2px solid var(--white-t) ;
+    overflow: hidden;
 }
-#info_hero{
+#sol{
+    padding: 3px 5px 3px 5px;
+    color: var(--white-t);
+}
+#lua{
+    padding: 3px 5px;
+    color: var(--white-t);
+    opacity: 0.4;
+}
+.info_hero{
     width: 100%;
 
     display: flex;
@@ -88,17 +104,17 @@ header{
     height: clamp(250px, 70%, 450px);
     margin-bottom: 50px;
 }
-#nome_hero {
+.nome_hero {
     width: 90%;
     text-align: center;
 }
-#nome_hero h1 {
+.nome_hero h1 {
     font-weight: lighter;
     font-size: 2em;
     padding-bottom: 10px;
     color: var(--color2);
 }
-#nome_hero h2 {
+.nome_hero h2 {
     font-size: 1.7em;
     color: var(--cor-secundaria);
 }
@@ -207,8 +223,8 @@ section > h2{
 
     flex: 1;
 
-    border-top: 2px solid var(--color2);
-    border-bottom: 2px solid var(--color2);
+    border-top: 3px solid var(--color2);
+    border-bottom: 3px solid var(--color2);
 }
 .skills_bolinhas {
     width: 100%;
@@ -415,8 +431,8 @@ section > h2{
 
     flex: 1;
 
-    border-top: 2px solid var(--color2);
-    border-bottom: 2px solid var(--color2);
+    border-top: 3px solid var(--cor-primaria);
+    border-bottom: 3px solid var(--cor-primaria);
 }
 .filtros_usados{
     display: none;                     /*deixe um tempo depois faça sumir*/
@@ -555,7 +571,7 @@ section > h2{
     margin-top: 4px;
 }
 .card_tolls > span {
-    background-color: lightcoral;
+    text-decoration: underline;
 }
 .projeto_bolinhas {
     width: 100%;
