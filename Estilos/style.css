@@ -199,7 +199,7 @@ section > h2{
     padding: 5px 0px;
 }
 .skills_carousel{
-    width: 300%;              /* 100% para cada skills_card que voce tiver*/
+    width: 400%;              /* 100% para cada skills_card que voce tiver*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -207,8 +207,8 @@ section > h2{
 
     flex: 1;
 
-    border-top: 2px solid var(--cor-primaria);
-    border-bottom: 2px solid var(--cor-primaria);
+    border-top: 2px solid var(--color2);
+    border-bottom: 2px solid var(--color2);
 }
 .skills_bolinhas {
     width: 100%;
@@ -217,6 +217,7 @@ section > h2{
     justify-content: center;
     column-gap: 10px;
 
+    /*a cor da bolinha, dentro tem que ser a cor primaria, e fora um preto para o modo claro e um branco para o modo escuro, sem esquecer de almentar o tamanho para dizer em q pagina ta*/
 
 }
 .skills_card {
@@ -231,13 +232,13 @@ section > h2{
     background-color: rgba(150, 0, 0, 0.918);
 }
 .skills_card.app{
-    background-color: rgba(0, 88, 0, 0.925);
+    background-color: rgba(0, 112, 0, 0.925);
 }
 .skills_card.api{
-    background-color: rgba(150, 150, 0, 0.897);
+    background-color: #fff080de;
 }
 .skills_card.art{
-    background-color: rgba(179, 128, 136, 0.932);
+    background-color: #8c5900e5;
 }
 .skills_card h3{
     font-size: 2em;
@@ -245,15 +246,6 @@ section > h2{
 .skills_card p {
     text-align: center;
     padding: 10px 0px;
-}
-.skills_nivel{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 20px;
-
-    padding: 15px 0px;
 }
 .skills_icons_container{
     width: 100%;
@@ -267,21 +259,26 @@ section > h2{
 .skills_icons{
     width: 100%;
     padding: 10px;
-    border-radius: 15px;
-    background-color: green;
-}
-.skills_icons div{
-    width: 100%;
-    padding: 10px;
     row-gap: 15px;
     column-gap: 20px;
 
-    border-radius: 10px;
+    border-radius: 30px;
+
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: white;
+    background-color: var(--bg-color);
+    border: 4px solid var(--color2);
+}
+.skills_icons legend{
+    text-align: center;
+    padding: 1px 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: var(--color1);
+
+    background-color: var(--color2);
 }
 .skills_icons img{
     height: clamp(50px,70px,100px);
@@ -418,8 +415,8 @@ section > h2{
 
     flex: 1;
 
-    border-top: 2px solid var(--cor-primaria);
-    border-bottom: 2px solid var(--cor-primaria);
+    border-top: 2px solid var(--color2);
+    border-bottom: 2px solid var(--color2);
 }
 .filtros_usados{
     display: none;                     /*deixe um tempo depois faça sumir*/
@@ -461,7 +458,18 @@ section > h2{
     border-radius: 20px;
 
     padding: 7px;
-    background-color: blueviolet;        /*A cor depende do tipo de projeto*/
+}
+.card_projeto.web{
+    background-color: rgba(150, 0, 0, 0.918);
+}
+.card_projeto.app{
+    background-color: rgba(0, 112, 0, 0.925);
+}
+.card_projeto.api{
+    background-color: #e9d53ed8;
+}
+.card_projeto.art{
+    background-color: #8c5900e5;
 }
 .card_titulo{
     width: 100%;
@@ -513,8 +521,13 @@ section > h2{
     text-decoration: none;
 
     border-radius: 5px;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
     cursor: pointer;
+}
+.card_btn_y > img {
+    height: 30px;
+    /*height: clamp(5px, 8px, 20px);*/
 }
 .card_btn_i{
     display: inline-flex;
@@ -530,7 +543,7 @@ section > h2{
     background-color: var(--bg-color);
     text-align: justify;
 
-    padding: 5px;
+    padding: 10px 5px;
     flex: 1;
 }
 .card_tolls{
@@ -638,7 +651,10 @@ footer{
     text-align: center;
     color: rgb(236, 236, 236);
 }
-footer > div{
+footer > h2 {
+    padding-bottom: 25px;
+}
+.footer_contato{
     width: 100%;
 
     display: flex;
@@ -647,4 +663,7 @@ footer > div{
     align-items: center;
 
     flex: 1;
+}
+.footer_contato img{
+    height: clamp(30px, 50px, 100px);
 }
