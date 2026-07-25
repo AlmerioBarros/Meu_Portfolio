@@ -44,7 +44,7 @@ html,body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    height: 100dvh;  /* 866px de altura, no maximo*/
+    height: 100vh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
@@ -121,7 +121,7 @@ header{
 nav{
     /*position: fixed;*/
     width: 100%; /*46pix de altura, no maximo*/
-    height: clamp(48px, 5dvh, 70px);
+    height: 6vh;
 
     display: flex;
     flex-flow: row nowrap;
@@ -141,7 +141,7 @@ main{
     background-color: var(--bg-color);
 }
 main > section{
-    height: clamp(500px, 95dvh, 900px);
+    height: 95vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -297,7 +297,7 @@ section > h2{
     background-color: var(--color2);
 }
 .skills_icons img{
-    height: clamp(50px,70px,100px);
+    height: clamp(30px,60px,90px);
 }
 
 
@@ -698,7 +698,7 @@ section > h2{
 /* CONTATO */
 
 #contato{
-    height: clamp(500px, 80dvh, 900px);
+    height: 80vh;
     background-color: var(--bg-color);
 
     scroll-snap-align: start;
@@ -756,7 +756,7 @@ section > h2{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    height: clamp(50px, 14.7dvh, 500px);      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    height: 14.7vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
 
     display: flex;
     flex-flow: column nowrap;
