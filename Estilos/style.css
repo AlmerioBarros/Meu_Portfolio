@@ -39,7 +39,7 @@ html,body{
     height: 100%;
 
     scroll-snap-type: y mandatory;
-    scroll-padding-top: clamp(48px, 5dvh, 70px);    
+    scroll-padding-top: 5vh;    
 }
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
@@ -100,8 +100,8 @@ header{
     flex: 1;
 }
 #foto_hero{
-    width: clamp(200px, 60%, 400px);
-    height: clamp(250px, 70%, 450px);
+    width: 60%;
+    height: 70%;
     margin-bottom: 50px;
 }
 .nome_hero {
@@ -140,7 +140,7 @@ nav{
 main{
     background-color: var(--bg-color);
 }
-main > section{
+main section{
     height: 95vh;
     display: flex;
     flex-flow: column nowrap;
@@ -279,7 +279,6 @@ section > h2{
     column-gap: 20px;
 
     border-radius: 30px;
-
 
     display: flex;
     flex-flow: row wrap;
