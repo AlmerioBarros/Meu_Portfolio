@@ -44,7 +44,7 @@ html,body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    height: 100vh;  /* 866px de altura, no maximo*/
+    min-height: 100dvh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
@@ -57,15 +57,13 @@ header{
 }
 .header_hero{
     width: 100%;    /*43px na media de altura*/    /*823*/
-    max-height: 55px;
-    min-height: 50px;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    padding: 15px 20px;
+    padding: 10px 20px;
     background-color: var(--cor-primaria);
 }
 .header_hero span{
@@ -85,10 +83,15 @@ header{
 #sol{
     padding: 3px 5px;
     color: var(--white-t);
+
+    font-size: 1.4em;
+    opacity: 1;
 }
 #lua{
     padding: 3px 5px;
     color: var(--white-t);
+
+    font-size: 1.2em;
     opacity: 0.4;
 }
 .info_hero{
@@ -96,19 +99,20 @@ header{
 
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center ;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 2px;
 
     flex: 1;
 }
 #foto_hero{
     width: 60%;
-    height: clamp(300px, 500px, 70%);
-    margin-bottom: 50px;
+    min-height: 60dvh;
 }
 .nome_hero {
     width: 90%;
     text-align: center;
+    padding: 2px;
 }
 .nome_hero h1 {
     font-weight: lighter;
@@ -121,15 +125,16 @@ header{
     color: var(--cor-secundaria);
 }
 nav{
-    /*position: fixed;*/
+    position: fixed;
     width: 100%; /*46pix de altura, no maximo*/
-    height: clamp(40px, 5vh, 50px);
+    min-height: 5dvh;
+    padding: 10px 0px;
+
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
-    padding: 15px 0px;
     background-color: var(--cor-primaria);
     color: var(--white-t);
 
@@ -139,16 +144,19 @@ nav{
 /* ------- PARTE DO CONTEUDO: NAVEGAÇÃO PELA PAGINA E PROJETOS --------*/
 
 main{
+    width: 100%;
     background-color: var(--bg-color);
 }
-main section{
-    height: clamp(580px,95vh, 860px);              /*tamanho maximo 860px*/
+main > section{
+    min-height: 95dvh;              /*tamanho maximo 860px*/
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-evenly;
     align-items: center;
     
-    row-gap: 15px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding: 20px 0px 10px 0px;
+    row-gap: 10px;
 
     scroll-snap-align: start;
 
@@ -156,11 +164,7 @@ main section{
 
 }
 section > h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-
+    text-align: center;
     font-size: 1.8em;
 }
 
@@ -178,6 +182,7 @@ section > h2{
     flex-flow: column nowrap;
 
     flex: 1;
+    margin-bottom: 10px;
 
     background-color: var(--bg-color2);
 }
@@ -209,11 +214,8 @@ section > h2{
     background-color: var(--bg-color);
     overflow: hidden;         /* esconde os skills_cards que não estão na tela*/
 }
-.skills_tools_descricao{
+#skills_tools > p{
     text-align: center;
-}
-.skills_tools_descricao > p{
-    padding: 5px 0px;
 }
 .skills_carousel{
     width: 400%;              /* 100% para cada skills_card que voce tiver*/
@@ -227,23 +229,13 @@ section > h2{
     border-top: 3px solid var(--color2);
     border-bottom: 3px solid var(--color2);
 }
-.skills_bolinhas {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
-
-    /*a cor da bolinha, dentro tem que ser a cor primaria, e fora um preto para o modo claro e um branco para o modo escuro, sem esquecer de almentar o tamanho para dizer em q pagina ta*/
-
-}
 .skills_card {
     width: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
 
-    padding: 10px;;
+    padding: 10px;
 }
 .skills_card.web{
     background-color: rgba(150, 0, 0, 0.918);
@@ -262,28 +254,30 @@ section > h2{
 }
 .skills_card p {
     text-align: center;
-    padding: 10px 0px;
 }
+
 .skills_icons_container{
     width: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
+    row-gap: 7px;
+    padding: 5px 0px;
 
     flex: 1;
 }
 .skills_icons{
     width: 100%;
-    padding: 10px;
-    row-gap: 15px;
-    column-gap: 20px;
+    padding: 10px 0px 7px 0px;
 
     border-radius: 30px;
+    row-gap: 7px;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     background-color: var(--bg-color);
     border: 4px solid var(--color2);
 }
@@ -291,14 +285,34 @@ section > h2{
     text-align: center;
     padding: 1px 8px;
     font-weight: bold;
+
     border-radius: 4px;
     color: var(--color1);
 
     background-color: var(--color2);
 }
 .skills_icons img{
-    height: clamp(30px,60px,90px);
+    height: 7dvh;
+    padding: 0px 15px;
 }
+
+.skills_bolinhas_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*a cor da bolinha, dentro tem que ser a cor primaria, e fora um preto para o modo claro e um branco para o modo escuro, sem esquecer de almentar o tamanho para dizer em q pagina ta*/
+
+}
+.bolinhas_skill{
+    color: var(--cor-primaria);
+    margin: 0px 7px;
+}
+.bolinhas_skill.ativo{
+    color: red;
+}
+
 
 
 /* PROJETOS */
@@ -307,7 +321,7 @@ section > h2{
     background-color: var(--bg-color);
     overflow: hidden;       /* esconde os .lista_projetos que não estão na tela*/
 }
-.btn_filtros{
+#btn_filtros{
     width: 70%;
 
     text-align: center;
@@ -430,6 +444,7 @@ section > h2{
     background-color: var(--bg-color2);
 
     flex: 1;
+    overflow: hidden;
 
     border-top: 3px solid var(--cor-primaria);
     border-bottom: 3px solid var(--cor-primaria);
@@ -448,8 +463,7 @@ section > h2{
 .carousel_projetos{
     width: 200%;                   /* responsavel pelo espaçamento para a rolagem das divs .lista_projetos */
     display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+    flex-flow: row nowrap;
 
     flex: 1;
 }
@@ -457,20 +471,19 @@ section > h2{
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 
-    row-gap: 15px;
+    padding: 7px 0px;
+    row-gap: 7px;
 }
 .card_projeto{
-    width: 92%;   /*450px*/
-    height: 300px ;
+    width: 90%;   /*450px*/
+    min-height: 33dvh;
 
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
-    overflow: hidden;
     border-radius: 20px;
 
     padding: 7px;
@@ -494,16 +507,18 @@ section > h2{
 .card_titulo >h3{
     width: 100%;
     text-align: center;
-    padding: 0px 35px 6px 35px;
+    padding: 0px 35px 4px 35px;
 }
-.card_titulo > img {
+.card_titulo >img {
     position: absolute;
-    padding: 0px 5px 6px 5px;
+    height: 30px;
+    padding: 0px 0px 8px 20px;
 }
 .card_imagem{
     position: relative;
     width: 100%;       /* 435px mais ou menos */
-    height: 110px;
+    max-height: 110px;
+    flex: 1;
     overflow: hidden;
     background-color: var(--bg-color);
 }
@@ -529,7 +544,7 @@ section > h2{
 .card_btn_y{
     display: inline-flex;
     align-items: center;
-    gap: 3px;
+    column-gap: 3px;
 
     margin-top: 5px;
     padding: 2px 2px 2px 5px;
@@ -542,7 +557,7 @@ section > h2{
     cursor: pointer;
 }
 .card_btn_y > img {
-    height: 30px;
+    height: 25px;
     /*height: clamp(5px, 8px, 20px);*/
 }
 .card_btn_i{
@@ -551,16 +566,29 @@ section > h2{
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.658);
 
-    margin-top: 10px;
+    margin-top: 5px;
     cursor: pointer;
 }
 .card_descricao{
     width: 100%;
-    background-color: var(--bg-color);
-    text-align: justify;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 
-    padding: 10px 5px;
-    flex: 1;
+    text-align: justify;
+    text-indent: 5px;
+
+    padding: 7px 5px;
+
+    background-color: var(--bg-color);
+}
+.card_descricao > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card_tolls{
     width: 100%;
@@ -573,13 +601,20 @@ section > h2{
 .card_tolls > span {
     text-decoration: underline;
 }
-.projeto_bolinhas {
+.projeto_bolinhas_container{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 10px;
 }
+.bolinhas_projeto{
+    color: var(--cor-primaria);
+    margin: 0px 7px;
+}
+.bolinhas_projeto.ativo{
+    color: red;
+}
+
 
 
 .info_projeto{
@@ -698,21 +733,20 @@ section > h2{
 /* CONTATO */
 
 #contato{
-    height: 80vh;
+    min-height: 80dvh;
     background-color: var(--bg-color);
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 
     scroll-snap-align: start;
 }
-#contato > p {
-    padding: 10px;
-}
-
 #email{
+    width: 90%;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     row-gap: 6px;
-    width: 90%;
 
     flex: 1;
 }
@@ -756,7 +790,7 @@ section > h2{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    height: 14.7vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    min-height: 15dvh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
 
     display: flex;
     flex-flow: column nowrap;

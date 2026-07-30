@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="">
+<body class="light">
     <header>
         <div class="header_hero">
             <span>Almerio</span>
@@ -92,10 +92,7 @@
                                                     <!-- SEÇÃO: SKILLS -->
         <section id="skills_tools">
             <h2>Conhecimentos</h2>
-            <div class="skills_tools_descricao">
-                <p>Minhas habilidades e ferramentas que utilizo.</p>
-                <p>Dividido por categoria, arraste para o lado para explorar</p>
-            </div>
+            <p>Classificando minhas habilidades e conhecimentos.</p>
             <div class="skills_carousel">
 
 
@@ -220,10 +217,10 @@
 
             </div>
 
-            <div class="skills_bolinhas">
-                <span>O</span>
-                <span>O</span>
-                <span>O</span>
+            <div class="skills_bolinhas_container">
+                <span class="bolinhas_skill ativo">O</span>
+                <span class="bolinhas_skill">O</span>
+                <span class="bolinhas_skill">O</span>
             </div>
 
         </section>
@@ -232,15 +229,15 @@
         <section id="projetos">
             <h2>Projetos e Trabalhos</h2>
 
-            <button class="btn_filtros">
+            <button id="btn_filtros">
                 Filtrar Projetos
             </button>
 
-            <div class="card_filtros">
+            <div class="card_filtros" id="card_filtros">
                 <form id="form_filtros" class="container_filtros">
                     <div class="card_filtros_header">
                         <h3>Filtros</h3>
-                        <button>&times</button>
+                        <button id="sair_filtros">&times</button>
                     </div>
                     <div class="card_filtros_descricao">
                         <p>Escolha os filtros que deseja utilizar na pesquisa de projetos</p>
@@ -298,7 +295,7 @@
 
                         <article class="card_projeto api">
                             <div class="card_titulo">
-                                <img src="Recursos/icones/info_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                <img src="Recursos/icones/youtube.png" alt="">
                                 <h3>Descubra o Número</h3>   <!--  30 carcters -->
                             </div>
 
@@ -318,8 +315,9 @@
                                 </div>
                                 
                             </div>
-
-                            <p class="card_descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque ea omnis recusandae non quod molestias soluta asperiores, magni animi. Sunt id ea alias expedita a minima, itaque quae esse!</p>
+                            <div class="card_descricao">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis at eligendi, porro dicta ducimus aspernatur officia omnis odio nisi voluptatem quasi, et recusandae quibusdam rerum assumenda tempore esse? Aspernatur, dolor.</p>
+                            </div>
                             <div class="card_tolls">
                                 <span> <i></i>API</span>
                                 <span> <i></i>HTML</span>
@@ -350,8 +348,9 @@
                                 </div>
                                 
                             </div>
-
-                            <p class="card_descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque ea omnis recusandae non quod molestias soluta asperiores, magni animi. Sunt id ea alias expedita a minima, itaque quae esse!</p>
+                            <div class="card_descricao">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis at eligendi, porro dicta ducimus aspernatur officia omnis odio nisi voluptatem quasi, et recusandae quibusdam rerum assumenda tempore esse? Aspernatur, dolor.</p>
+                            </div>
                             <div class="card_tolls">
                                 <span> <i></i>aaa</span>
                                 <span> <i></i>bbb</span>
@@ -393,10 +392,10 @@
                 </div>
             </div>
 
-            <div class="projeto_bolinhas">
-                <span>O</span>
-                <span>O</span>
-                <span>O</span>
+            <div class="projeto_bolinhas_contanier">
+                <span class="bolinhas_projeto ativo">O</span>
+                <span class="bolinhas_projeto">O</span>
+                <span class="bolinhas_projeto">O</span>
             </div>
 
         </section>
