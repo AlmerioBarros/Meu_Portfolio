@@ -156,7 +156,6 @@ main{
     
     margin-bottom: 50px;
     padding: 20px 0px 10px 0px;
-    row-gap: 10px;
 
     scroll-snap-align: start;
 
@@ -167,6 +166,7 @@ main{
 #perfil > h2 {
     text-align: center;
     font-size: 1.8em;
+    margin-bottom: 10px;
 }
 .descricao_perfil{
     width: 90%;
@@ -187,12 +187,15 @@ main{
     flex-flow: column nowrap;
 
     padding: 10px;
-    row-gap: 10px;
 
     text-align: justify;
 }
 .descricao_texto > h3 {
     color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+.descricao_texto > p {
+    margin-bottom: 10px;
 }
 .descricao_img{
     width: 100%;
@@ -213,7 +216,6 @@ main{
     
     margin-bottom: 50px;
     padding: 20px 0px 10px 0px;
-    row-gap: 10px;
 
     scroll-snap-align: start;
 
@@ -225,9 +227,11 @@ main{
 #skills_tools > h2 {
     text-align: center;
     font-size: 1.8em;
+    margin-bottom: 10px;
 }
 #skills_tools > p{
     text-align: center;
+    margin-bottom: 10px;
 }
 .skills_carousel{
     width: 400%;              /* 100% para cada skills_card que voce tiver*/
@@ -265,6 +269,8 @@ main{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 5px;
 }
 .skills_seta{
     color: var(--color1);
@@ -277,6 +283,7 @@ main{
 }
 .skills_card p {
     text-align: center;
+    margin: 5px 0px;
 }
 
 .skills_icons_container{
@@ -284,27 +291,18 @@ main{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    row-gap: 7px;
     padding: 5px 0px;
 
     flex: 1;
 }
-.skills_icons{
+.skills_fieldset{
     width: 100%;
     padding: 10px 0px 7px 0px;
-
     border-radius: 30px;
-    row-gap: 7px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    
     background-color: var(--bg-color);
     border: 4px solid var(--color2);
 }
-.skills_icons legend{
+.skills_fieldset legend{
     text-align: center;
     padding: 1px 8px;
     font-weight: bold;
@@ -314,9 +312,19 @@ main{
 
     background-color: var(--color2);
 }
+.skills_icons{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
 .skills_icons img{
     height: 7vh;
     padding: 0px 15px;
+    margin-bottom: 7px ;
 }
 
 .skills_bolinhas_container {
@@ -324,6 +332,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 
     /*a cor da bolinha, dentro tem que ser a cor primaria, e fora um preto para o modo claro e um branco para o modo escuro, sem esquecer de almentar o tamanho para dizer em q pagina ta*/
 
@@ -349,7 +358,6 @@ main{
     
     margin-bottom: 50px;
     padding: 20px 0px 10px 0px;
-    row-gap: 10px;
 
     scroll-snap-align: start;
 
@@ -361,6 +369,7 @@ main{
 #projetos > h2 {
     text-align: center;
     font-size: 1.8em;
+    margin-bottom: 10px;
 }
 #btn_filtros{
     width: 70%;
@@ -369,6 +378,7 @@ main{
     font-size: 1em;
 
     padding: 5px 0px;
+    margin-bottom: 10px;
 
     background-color: var(--color1);
     border: 3px solid var(--cor-primaria);
@@ -423,15 +433,15 @@ main{
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 7px 5px;
-    row-gap: 10px;
+    justify-content: space-between;
+    padding: 7px 2px;
 
     background-color: var(--white-t);
     color: black;
 }
 .card_filtros_descricao > p:first-child{
     width: 100%;
+    margin-bottom: 7px;
 }
 .card_filtros_descricao > p {
     text-align: center;
@@ -452,12 +462,14 @@ main{
     text-align: center;
     padding-bottom: 20px ;
 }
-.grupo_filtro > div{
+.grupo_filtros_interno{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding: 0px 10px;
-    gap: 25px;
+    padding: 0px 7px;
+}
+.grupo_filtros_interno > input {
+    margin: 25px;
 }
 .btn_filtro_aplicar{
     width: 50%;
@@ -515,8 +527,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
 
-    padding: 7px 0px;
-    row-gap: 7px;
+    padding-top: 7px;
 }
 .card_projeto{
     width: 90%;   /*450px*/
@@ -528,6 +539,7 @@ main{
     border-radius: 20px;
 
     padding: 7px;
+    margin-bottom: 7px;
 }
 .card_projeto.web{
     background-color: rgba(150, 0, 0, 0.918);
@@ -585,7 +597,6 @@ main{
 .card_btn_y{
     display: inline-flex;
     align-items: center;
-    column-gap: 3px;
 
     margin-top: 5px;
     padding: 2px 2px 2px 5px;
@@ -599,6 +610,7 @@ main{
 }
 .card_btn_y > img {
     height: 25px;
+    margin-left: 3px;
     /*height: clamp(5px, 8px, 20px);*/
 }
 .card_btn_i{
@@ -647,6 +659,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 .bolinhas_projeto{
     color: var(--cor-primaria);
@@ -738,7 +751,6 @@ main{
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    row-gap: 10px;
 
     border-radius: 0px 0px 10px 10px;
     margin-top: 5px;
@@ -782,7 +794,6 @@ main{
     
     padding: 20px 0px 30px 0px;
     margin-bottom: 0px;
-    row-gap: 10px;
 
     scroll-snap-align: start;
 
@@ -793,6 +804,7 @@ main{
 #contato > h2 {
     text-align: center;
     font-size: 1.8em;
+    margin-bottom: 10px;
 }
 #email{
     width: 90%;
@@ -800,7 +812,6 @@ main{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    row-gap: 6px;
 
     flex: 1;
 }
@@ -808,18 +819,21 @@ main{
     padding-top: 10px;
     color: var(--cor-secundaria);
     text-shadow: 0px 1px 1px var(--sombra);
+    margin-bottom: 5px;
 }
 #email_nome{
     padding: 5px 0px 5px 5px;
     border-radius: 5px;
 
     border: 1px solid black;
+    margin-bottom: 5px;
 }
 #email_email{
     padding: 5px 0px 5px 5px;
     border-radius: 5px;
 
     border: 1px solid black;
+    margin-bottom: 5px;
 }
 #email_mensagem{
     flex: 1;
@@ -827,6 +841,7 @@ main{
     border-radius: 5px;
 
     border: 1px solid black;
+    margin-bottom: 5px;
 }
 #btn_enviar{
     background-color: rgb(44, 187, 44);
