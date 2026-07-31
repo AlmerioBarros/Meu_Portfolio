@@ -81,14 +81,14 @@ header{
     padding: 3px 5px;
     color: var(--white-t);
 
-    font-size: 1.4em;
+    font-size: 1.3em;
     opacity: 1;
 }
 #lua{
     padding: 3px 5px;
     color: var(--white-t);
 
-    font-size: 1.2em;
+    font-size: 1.1em;
     opacity: 0.4;
 }
 .info_hero{
@@ -98,7 +98,7 @@ header{
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2px;
+    margin: 2px 2px 40px 2px;
 
     flex: 1;
 }
@@ -121,20 +121,37 @@ header{
     font-size: 1.7em;
     color: var(--cor-secundaria);
 }
+
+
+
 nav{
     position: fixed;
-    width: 100%; /*46pix de altura, no maximo*/
-    min-height: 5vh;
-    padding: 10px 0px;
+    width: 100%;
+    z-index: 500;
+    bottom: none;
+    top: none;
+
+    min-height: 6vh;
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
 
     background-color: var(--cor-primaria);
     color: var(--white-t);
 
+    font-weight: bold;
+
+}
+nav > div{
+    border-radius: 10px;
+    padding: 8px 5px;
+}
+nav > div.ativo{
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
 }
 
 
@@ -872,7 +889,7 @@ footer{
     color: rgb(236, 236, 236);
 }
 footer > h2 {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 .footer_contato{
     width: 100%;

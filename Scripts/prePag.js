@@ -7,6 +7,8 @@ MudarTemaLoading();
 const btn_tema = document.getElementById("btn_tema");
 btn_tema.addEventListener("click", MudarTemaClick);
 
+// Referente ao nav
+
 
 // Referentes a filtragem dos projetos
 
@@ -23,3 +25,4 @@ sair_filtros.addEventListener("click", () => {
     card_filtros.classList.toggle("ativo")
     event.preventDefault()
 });
+
