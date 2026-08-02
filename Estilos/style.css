@@ -351,7 +351,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin:10px 0ox 5px 0px;
 
     /*a cor da bolinha, dentro tem que ser a cor primaria, e fora um preto para o modo claro e um branco para o modo escuro, sem esquecer de almentar o tamanho para dizer em q pagina ta*/
 
@@ -678,7 +678,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin:10px 0ox 5px 0px;
 }
 .bolinhas_projeto{
     color: var(--cor-primaria);
