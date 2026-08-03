@@ -51,6 +51,8 @@ header{
     background-color: var(--bg-color);
 
     scroll-snap-align: start;
+
+    padding-bottom: 70px;
 }
 .header_hero{
     width: 100%;    /*43px na media de altura*/    /*823*/
@@ -120,8 +122,6 @@ header{
 .nome_hero h2 {
     font-size: 1.7em;
     color: var(--cor-secundaria);
-
-    padding-bottom: 70px;
 }
 
 
@@ -130,7 +130,7 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 500;
-    bottom: none;
+    bottom: 0;
     top: none;
 
     min-height: 6vh;
@@ -292,7 +292,7 @@ main{
     margin-bottom: 5px;
 }
 .skills_seta{
-    color: var(--color1);
+    color: var(--white-t);
 } 
 .skills_seta.oculta{
     opacity: 0;
@@ -513,13 +513,13 @@ main{
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    background-color: var(--bg-color2);
+    background-color: var(--cor-primaria);
 
     flex: 1;
     overflow: hidden;
 
-    border-top: 3px solid var(--cor-primaria);
-    border-bottom: 3px solid var(--cor-primaria);
+    border-top: 3px solid var(--color2);
+    border-bottom: 3px solid var(--color2);
 }
 .filtros_usados{
     display: none;                     /*deixe um tempo depois faça sumir*/
@@ -559,6 +559,8 @@ main{
 
     padding: 7px;
     margin-bottom: 7px;
+
+    border: 3px solid var(--color2);
 }
 .card_projeto.web{
     background-color: rgba(150, 0, 0, 0.918);
@@ -590,7 +592,7 @@ main{
     position: relative;
     width: 100%;       /* 435px mais ou menos */
     max-height: 110px;
-    flex: 1;
+    flex: 2;
     overflow: hidden;
     background-color: var(--bg-color);
 }
@@ -643,6 +645,7 @@ main{
 }
 .card_descricao{
     width: 100%;
+    flex: 1;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -656,8 +659,8 @@ main{
 }
 .card_descricao > p {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
