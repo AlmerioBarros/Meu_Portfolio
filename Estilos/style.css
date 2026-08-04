@@ -15,7 +15,8 @@
     --color2: black;
     --bg-color: white;
     --bg-color2: rgba(226, 226, 226, 0.76);
-    --cor-primaria: #0077cc;    /*#004C81*/
+    --bg-color3: #50b6ff ;
+    --cor-primaria: #0077cc;    /*#0077cc*/
     --cor-secundaria: #50b6ff;     /*#50b6ff*/
     --sombra: rgba(0, 0, 0, 0.26);
     --cor-tercearia : #002f50e3;
@@ -27,32 +28,35 @@
     --color2: rgb(236, 236, 236);
     --bg-color: black;
     --bg-color2: rgba(100, 100, 100, 0.849);
-    --cor-primaria: rgb(97, 0, 97);    /*#004C81*/
-    --cor-secundaria: rgb(158, 0, 158);     /*#50b6ff*/
+    --bg-color3: #610061;
+    --cor-primaria: #610061;    /*#004C81*/
+    --cor-secundaria: #9e009e;     /*#50b6ff*/
     --sombra: rgba(0, 0, 0, 0.452);
-    --cor-tercearia : rgb(231, 0, 231) ;
+    --cor-tercearia : rgb(231, 0, 231);
     --white-t: rgb(236, 236, 236);
 }
 
 html,body{
     scroll-snap-type: y mandatory;  
     scroll-padding-top: 5vh;
+
+    background-color: var(--bg-color);
 }
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 100vh;  /* 866px de altura, no maximo*/
+    min-height: 95vh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
 
+     margin-bottom: 6vh;
+
     background-color: var(--bg-color);
 
     scroll-snap-align: start;
-
-    padding-bottom: 70px;
 }
 .header_hero{
     width: 100%;    /*43px na media de altura*/    /*823*/
@@ -130,7 +134,7 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 500;
-    bottom: 0;
+    bottom: none;
     top: none;
 
     min-height: 6vh;
@@ -272,16 +276,16 @@ main{
     padding: 10px;
 }
 .skills_card.web{
-    background-color: rgba(150, 0, 0, 0.918);
+    background-color: rgba(185, 0, 0, 0.918);
 }
 .skills_card.app{
-    background-color: rgba(0, 112, 0, 0.925);
+    background-color: rgba(0, 165, 0, 0.925);
 }
 .skills_card.api{
-    background-color: #fff080de;
+    background-color: #ffe101ea;
 }
 .skills_card.art{
-    background-color: #8c5900e5;
+    background-color: #a76900e5;
 }
 .skills_card_titulo{
     width: 50%;
@@ -299,10 +303,13 @@ main{
 }
 .skills_card_titulo > h3{
     font-size: 2em;
+    color: var(--white-t);
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 .skills_card p {
     text-align: center;
     margin: 5px 0px;
+    flex: 1;
 }
 
 .skills_icons_container{
@@ -312,7 +319,7 @@ main{
     justify-content: space-around;
     padding: 5px 0px;
 
-    flex: 1;
+    flex: 4;
 }
 .skills_fieldset{
     width: 100%;
@@ -351,17 +358,24 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:10px 0ox 5px 0px;
+    margin:10px 0px 5px 0px;
 
     /*a cor da bolinha, dentro tem que ser a cor primaria, e fora um preto para o modo claro e um branco para o modo escuro, sem esquecer de almentar o tamanho para dizer em q pagina ta*/
 
 }
 .bolinhas_skill{
-    color: var(--cor-primaria);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--color1);
+
+    box-shadow: 1px 1px 1px var(--sombra);
     margin: 0px 7px;
 }
 .bolinhas_skill.ativo{
-    color: red;
+    background-color: var(--cor-secundaria);
 }
 
 
@@ -393,7 +407,11 @@ main{
 #btn_filtros{
     width: 70%;
 
-    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
     font-size: 1em;
 
     padding: 5px 0px;
@@ -401,8 +419,13 @@ main{
 
     background-color: var(--color1);
     border: 3px solid var(--cor-primaria);
+    border-radius: 10px;
     cursor: pointer;
     color: var(--color2);
+}
+#btn_filtros > i {
+    padding-left: 10px;
+    font-size: 1.2em;
 }
 .card_filtros {
     position: fixed;
@@ -513,7 +536,7 @@ main{
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    background-color: var(--cor-primaria);
+    background-color: var(--bg-color3);
 
     flex: 1;
     overflow: hidden;
@@ -563,16 +586,16 @@ main{
     border: 3px solid var(--color2);
 }
 .card_projeto.web{
-    background-color: rgba(150, 0, 0, 0.918);
+    background-color: rgba(185, 0, 0, 0.918);
 }
 .card_projeto.app{
-    background-color: rgba(0, 112, 0, 0.925);
+    background-color: rgba(0, 165, 0, 0.925);
 }
 .card_projeto.api{
-    background-color: #e9d53ed8;
+    background-color: #ffe101ea;
 }
 .card_projeto.art{
-    background-color: #8c5900e5;
+    background-color: #a76900e5;
 }
 .card_titulo{
     width: 100%;
@@ -582,6 +605,8 @@ main{
     width: 100%;
     text-align: center;
     padding: 0px 35px 4px 35px;
+    text-shadow: 1px 1px 2px var(--sombra);
+    color: var(--white-t);
 }
 .card_titulo >img {
     position: absolute;
@@ -635,7 +660,7 @@ main{
     /*height: clamp(5px, 8px, 20px);*/
 }
 .card_btn_i{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.658);
@@ -681,14 +706,21 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:10px 0ox 5px 0px;
+    margin:10px 0px 5px 0px;
 }
 .bolinhas_projeto{
-    color: var(--cor-primaria);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--color1);
+
+    box-shadow: 1px 1px 1px var(--sombra);
     margin: 0px 7px;
 }
 .bolinhas_projeto.ativo{
-    color: red;
+    background-color: var(--cor-secundaria);
 }
 
 
@@ -840,7 +872,7 @@ main{
 #email > label{
     padding-top: 10px;
     color: var(--cor-secundaria);
-    text-shadow: 0px 1px 1px var(--sombra);
+    text-shadow: 0px 1px 0px var(--sombra);
     margin-bottom: 5px;
 }
 #email_nome{

@@ -15,7 +15,7 @@
     <script src="Scripts/prePag.js" type="module"></script>
 
     <!--    LINKS FONTE/ICONES   -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode,wb_sunny" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode,filter_list,wb_sunny" />
 
 </head>
 
@@ -96,7 +96,7 @@
             <div class="skills_carousel">
 
 
-                <div class="skills_card web">
+                <div class="skills_card art">
                     <div class="skills_card_titulo">
                         <span class="skills_seta oculta"> 0--</span>
                         <h3>Web</h3>
@@ -246,9 +246,9 @@
             </div>
 
             <div class="skills_bolinhas_container">
-                <span class="bolinhas_skill ativo">O</span>
-                <span class="bolinhas_skill">O</span>
-                <span class="bolinhas_skill">O</span>
+                <span class="bolinhas_skill ativo"></span>
+                <span class="bolinhas_skill"></span>
+                <span class="bolinhas_skill"></span>
             </div>
 
         </section>
@@ -259,6 +259,9 @@
 
             <button id="btn_filtros">
                 Filtrar Projetos
+                <i class="material-symbols-outlined">
+                    filter_list
+                </i>
             </button>
 
             <div class="card_filtros" id="card_filtros">
@@ -269,7 +272,7 @@
                     </div>
                     <div class="card_filtros_descricao">
                         <p>Escolha os filtros que deseja utilizar na pesquisa de projetos</p>
-                        <p> <span> Categoria: </span> escolha única </p>
+                        <p> <span> Categoria: </span>escolha única</p>
                         <p> <span>Ferramentas: </span>multipla escolha</p>
                     </div>
                     <div class="grupo_filtro">
@@ -304,7 +307,7 @@
                         </div>
                     </div>
                     
-                    <button type="submit" class="btn_filtro_aplicar">Aplicar Filtros</button>
+                    <button type="submit" class="btn_filtro_aplicar" id="btn_filtro_aplicar">Aplicar Filtros</button>
                 </form>
             </div>
 
@@ -421,9 +424,8 @@
             </div>
 
             <div class="projeto_bolinhas_container">
-                <span class="bolinhas_projeto ativo">O</span>
-                <span class="bolinhas_projeto">O</span>
-                <span class="bolinhas_projeto">O</span>
+                <span class="bolinhas_projeto ativo"></span>
+                <span class="bolinhas_projeto"></span>
             </div>
 
         </section>
