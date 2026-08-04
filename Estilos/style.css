@@ -38,21 +38,19 @@
 
 html,body{
     scroll-snap-type: y mandatory;  
-    scroll-padding-top: 5vh;
+    scroll-padding-top: 6vh;
 
     background-color: var(--bg-color);
 }
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 95vh;  /* 866px de altura, no maximo*/
+    min-height: 100vh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-
-     margin-bottom: 6vh;
 
     background-color: var(--bg-color);
 
@@ -131,11 +129,9 @@ header{
 
 
 nav{
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 500;
-    bottom: none;
-    top: none;
 
     min-height: 6vh;
 
@@ -158,6 +154,10 @@ nav > div{
 nav > div.ativo{
     background-color: var(--cor-secundaria);
     cursor: pointer;
+}
+nav.fixed{
+    position: fixed;
+    scroll-margin-top: none;
 }
 
 
