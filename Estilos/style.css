@@ -45,7 +45,9 @@ html,body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 100vh;  /* 866px de altura, no maximo*/
+    min-height: 90vh;  /* 866px de altura, no maximo*/
+
+    margin-bottom: 8vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -129,7 +131,7 @@ header{
 
 
 nav{
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 500;
 
@@ -155,9 +157,13 @@ nav > div.ativo{
     background-color: var(--cor-secundaria);
     cursor: pointer;
 }
-nav.fixed{
-    position: fixed;
-    scroll-margin-top: none;
+nav.top{
+    top: 0;
+    bottom: none;
+}
+nav.bottom{
+    top: none;
+    bottom: 0;
 }
 
 
@@ -254,7 +260,7 @@ main{
 }
 #skills_tools > p{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .skills_carousel{
     width: 400%;              /* 100% para cada skills_card que voce tiver*/
@@ -358,9 +364,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:10px 0px 5px 0px;
-
-    /*a cor da bolinha, dentro tem que ser a cor primaria, e fora um preto para o modo claro e um branco para o modo escuro, sem esquecer de almentar o tamanho para dizer em q pagina ta*/
+    margin: 20px 0px 10px 0px;
 
 }
 .bolinhas_skill{
@@ -706,7 +710,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:10px 0px 5px 0px;
+    margin: 20px 0px 10px 0px;
 }
 .bolinhas_projeto{
     width: 10px;

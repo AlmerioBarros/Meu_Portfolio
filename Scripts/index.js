@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {      // CUIDA DO MOVIMENTO
         (e) => {
             e.forEach((e) => {
                 if (e.isIntersecting) {
-                    nav.classList.add("fixed");
-                    nav.classList.remove("reference");
+                    nav.classList.add("top");
+                    nav.classList.remove("bottom");
                 }
             }) 
         },
@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {      // CUIDA DO MOVIMENTO
         (e) => {
             e.forEach((e) => {
                 if (e.isIntersecting) {
-                    nav.classList.add("reference");
-                    nav.classList.remove("fixed");
+                    nav.classList.add("bottom");
+                    nav.classList.remove("top");
                 }
             }) 
         },
