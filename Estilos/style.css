@@ -47,10 +47,10 @@ html,body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 90vh;  /* 866px de altura, no maximo*/
+    min-height: 80vh;  /* 866px de altura, no maximo*/
 
 
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -113,7 +113,7 @@ header{
 }
 #foto_hero{
     width: 60%;
-    min-height: 60vh;
+    min-height: 50vh;
 }
 .nome_hero {
     width: 90%;
@@ -180,9 +180,9 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 90vh;              /*tamanho maximo 860px*/
+    min-height: 85vh;              /*tamanho maximo 860px*/
 
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -243,9 +243,9 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    min-height: 90vh;              /*tamanho maximo 860px*/
+    min-height: 85vh;              /*tamanho maximo 860px*/
 
-    margin-bottom: 8vh;
+    margin-bottom: 20vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -394,8 +394,8 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 90vh;              /*tamanho maximo 860px*/
-    margin-bottom: 8vh;
+    min-height: 85vh;              /*tamanho maximo 860px*/
+    margin-bottom: 20vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -674,6 +674,7 @@ main{
 .card_btn_i{
     display: flex;
     align-items: center;
+    right: 0;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.658);
 
@@ -924,7 +925,7 @@ main{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    min-height: 15vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    min-height: 14.7vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
 
     scroll-snap-align: end;
 
