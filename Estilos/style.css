@@ -37,9 +37,6 @@
 }
 
 html,body{
-    width: 100%;
-    min-height: 100%;
-
     scroll-snap-type: y mandatory;  
     scroll-padding-top: 6vh;
 
@@ -48,8 +45,7 @@ html,body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 90svh;  /* 866px de altura, no maximo*/
-    max-height: 90dvh;
+    min-height: 90vh;  /* 866px de altura, no maximo*/
 
     margin-bottom: 8vh;
 
@@ -114,7 +110,7 @@ header{
 }
 #foto_hero{
     width: 60%;
-    min-height: 50vh;
+    min-height: 60vh;
 }
 .nome_hero {
     width: 90%;
@@ -181,7 +177,7 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 95dvh;              /*tamanho maximo 860px*/
+    min-height: 95vh;              /*tamanho maximo 860px*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -242,7 +238,7 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    min-height: 95dvh;              /*tamanho maximo 860px*/
+    min-height: 95vh;              /*tamanho maximo 860px*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -391,7 +387,7 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 95dvh;              /*tamanho maximo 860px*/
+    min-height: 95vh;              /*tamanho maximo 860px*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -848,7 +844,7 @@ main{
 /* CONTATO */
 
 #contato{
-    min-height: 80dvh;
+    min-height: 80vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -921,7 +917,7 @@ main{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    min-height: 15dvh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    min-height: 15vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
 
     display: flex;
     flex-flow: column nowrap;
