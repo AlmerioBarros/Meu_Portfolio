@@ -65,7 +65,7 @@ body{
 
     background-color: var(--bg-color);
 }
-body::-webkit-scrollbar{
+.app_container::-webkit-scrollbar{
     display: none;
 }
 
