@@ -37,6 +37,8 @@
 }
 
 html,body{
+    width: 100%;
+    min-height: 100%;
     scroll-snap-type: y mandatory;  
     scroll-padding-top: 6vh;
 
@@ -45,7 +47,11 @@ html,body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 90vh;  /* 866px de altura, no maximo*/
+    min-height: 90svh;  /* 866px de altura, no maximo*/
+    max-height: 90vh;
+    height: 90dvh;
+
+    transition: height 0.2s ease-out;
 
     margin-bottom: 8vh;
 
@@ -177,7 +183,12 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 95vh;              /*tamanho maximo 860px*/
+    min-height: 95svh;              /*tamanho maximo 860px*/
+    max-height: 95vh;
+    height: 95dvh;
+
+    transition: height 0.2s ease-out;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -238,7 +249,12 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    min-height: 95vh;              /*tamanho maximo 860px*/
+    min-height: 95svh;              /*tamanho maximo 860px*/
+    max-height: 95vh;
+    height: 95dvh;
+
+    transition: height 0.2s ease-out;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -314,7 +330,7 @@ main{
 }
 .skills_card p {
     text-align: center;
-    margin: 5px 0px;
+    padding-top: 5px;
     flex: 1;
 }
 
@@ -387,7 +403,12 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 95vh;              /*tamanho maximo 860px*/
+    min-height: 95svh;              /*tamanho maximo 860px*/
+    max-height: 95vh;
+    height: 95dvh;
+
+    transition: height 0.2s ease-out;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -844,7 +865,11 @@ main{
 /* CONTATO */
 
 #contato{
-    min-height: 80vh;
+    min-height: 80svh;
+    max-height: 80vh;
+    height: 80dvh;
+    transition: height 0.2s ease-out;
+    
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -852,8 +877,6 @@ main{
     
     padding: 25px 0px 30px 0px;
     margin-bottom: 0px;
-
-    scroll-snap-align: start;
 
     color: var(--color2);
 
@@ -917,7 +940,12 @@ main{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    min-height: 15vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    min-height: 15svh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    max-height: 15vh;
+    height: 15dvh;
+    transition: height 0.2s ease-out;
+
+    scroll-snap-align: end;
 
     display: flex;
     flex-flow: column nowrap;
@@ -927,7 +955,7 @@ footer{
     padding: 15px 0px;
 
     text-align: center;
-    color: rgb(236, 236, 236);
+    color: var(--white-t);
 }
 footer > h2 {
     padding-bottom: 20px;
@@ -943,5 +971,5 @@ footer > h2 {
     flex: 1;
 }
 .footer_contato img{
-    height: 5vh;
+    max-height: 5vh;
 }
