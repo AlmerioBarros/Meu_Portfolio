@@ -47,11 +47,8 @@ html,body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 90svh;  /* 866px de altura, no maximo*/
-    max-height: 90vh;
-    height: 90dvh;
+    min-height: 90vh;  /* 866px de altura, no maximo*/
 
-    transition: height 0.2s ease-out;
 
     margin-bottom: 8vh;
 
@@ -183,18 +180,15 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 95svh;              /*tamanho maximo 860px*/
-    max-height: 95vh;
-    height: 95dvh;
+    min-height: 90vh;              /*tamanho maximo 860px*/
 
-    transition: height 0.2s ease-out;
+    margin-bottom: 8vh;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
     
-    margin-bottom: 50px;
     padding: 25px 0px 10px 0px;
 
     scroll-snap-align: start;
@@ -249,17 +243,14 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    min-height: 95svh;              /*tamanho maximo 860px*/
-    max-height: 95vh;
-    height: 95dvh;
+    min-height: 90vh;              /*tamanho maximo 860px*/
 
-    transition: height 0.2s ease-out;
+    margin-bottom: 8vh;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     
-    margin-bottom: 50px;
     padding: 25px 0px 10px 0px;
 
     scroll-snap-align: start;
@@ -403,18 +394,14 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 95svh;              /*tamanho maximo 860px*/
-    max-height: 95vh;
-    height: 95dvh;
-
-    transition: height 0.2s ease-out;
+    min-height: 90vh;              /*tamanho maximo 860px*/
+    margin-bottom: 8vh;
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
     
-    margin-bottom: 50px;
     padding: 25px 0px 10px 0px;
 
     scroll-snap-align: start;
@@ -865,10 +852,7 @@ main{
 /* CONTATO */
 
 #contato{
-    min-height: 80svh;
-    max-height: 80vh;
-    height: 80dvh;
-    transition: height 0.2s ease-out;
+    min-height: 80vh;
     
     display: flex;
     flex-flow: column nowrap;
@@ -940,10 +924,7 @@ main{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    min-height: 15svh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
-    max-height: 15vh;
-    height: 15dvh;
-    transition: height 0.2s ease-out;
+    min-height: 15vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
 
     scroll-snap-align: end;
 
