@@ -49,7 +49,6 @@ body{
     height: 100dvh;
 
     overflow: hidden;
-    overflow-y: auto;
 
     background-color: var(--bg-color);
 }
