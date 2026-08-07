@@ -36,35 +36,14 @@
     --white-t: rgb(236, 236, 236);
 }
 
-html{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100dvh;
-
-    overflow: hidden;
-
-    background-color: var(--bg-color);
-}
-.app_container{
+html, body{
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100%;
 
-    display: flex;
-    flex-flow: column nowrap;
-
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;  
-    -webkit-overflow-scrolling: touch;
     scroll-padding-top: 6vh;
+    scroll-snap-type: y mandatory;  
 
     background-color: var(--bg-color);
 }
