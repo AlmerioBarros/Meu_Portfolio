@@ -50,9 +50,6 @@ html, body{
 header{
     min-height: 87vh;  /* 866px de altura, no maximo*/
 
-    padding: 0px 0px 30px 0px;
-    margin-bottom: 20vh;
-
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -183,8 +180,8 @@ main{
 #perfil{
     min-height: 86vh;              /*tamanho maximo 860px*/
 
-    padding: 25px 0px 30px 0px;
-    margin-bottom: 20vh;
+    padding: 25px 0px 25px 0px;
+    margin-top: 14vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -248,7 +245,7 @@ main{
     min-height: 86vh;              /*tamanho maximo 860px*/
 
     padding: 25px 0px 30px 0px;
-    margin-bottom: 20vh;
+    margin-top: 14vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -400,7 +397,7 @@ main{
     min-height: 86vh;              /*tamanho maximo 860px*/
 
     padding: 25px 0px 30px 0px;
-    margin-bottom: 20vh;
+    margin-top: 14vh;
 
     display: flex;
     flex-flow: column nowrap;
