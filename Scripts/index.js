@@ -10,7 +10,7 @@ btn_tema.addEventListener("click", MudarTemaClick);
 
 // Referente a var --vh que pega o tamanho da tela no mobile e ajuda aos elementos a não bugar o tamnho quando a barra do navegador sobe ou desce
 
-function fixMobileViewport() {
+/*function fixMobileViewport() {
   // Obtém 1% da altura interna real do navegador
   const vh = window.innerHeight * 0.01;
   // Define o valor na variável CSS --vh na raiz do documento
@@ -24,7 +24,7 @@ fixMobileViewport();
 window.addEventListener('orientationchange', () => {
   // Pequeno timeout para aguardar a rotação concluir
   setTimeout(fixMobileViewport, 200);
-});
+});*/
 
 
 // Referente ao nav

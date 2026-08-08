@@ -50,9 +50,9 @@ html, body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 87vh;  /* 866px de altura, no maximo*/
-    min-height: calc(var(--vh,1vh) * 93);
+   /* min-height: 87vh;  /* 866px de altura, no maximo*/
 
+    min-height: calc(var(--vh,1vh) * 93);
     margin-bottom: calc(var(--vh,1vh) * 13);
 
     display: flex;
@@ -116,7 +116,7 @@ header{
 }
 #foto_hero{
     width: 60%;
-    min-height: 40vh;
+    /*min-height: 40vh;*/
     min-height: calc(var(--vh,1vh) * 50);
 }
 .nome_hero {
@@ -142,7 +142,7 @@ nav{
     width: 100%;
     z-index: 500;
 
-    min-height: 6vh;
+    /*min-height: 6vh;*/
     min-height: calc(var(--vh,1vh) * 6);
 
     display: flex;
@@ -185,7 +185,7 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 86vh;              /*tamanho maximo 860px*/
+    /*min-height: 86vh;              /*tamanho maximo 860px*/
     min-height: calc(var(--vh,1vh) * 94);
 
     margin-bottom: 14vh;
@@ -249,7 +249,7 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    min-height: 86vh;              /*tamanho maximo 860px*/
+    /*min-height: 86vh;              /*tamanho maximo 860px*/
     min-height: calc(var(--vh,1vh) * 94);
 
     margin-bottom: 14vh;
@@ -401,7 +401,7 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 86vh;              /*tamanho maximo 860px*/
+    /*min-height: 86vh;              /*tamanho maximo 860px*/
     min-height: calc(var(--vh,1vh) * 94);
 
     margin-bottom: 20vh;
@@ -594,7 +594,7 @@ main{
 }
 .card_projeto{
     width: 90%;   /*450px*/
-    min-height: 30vh;
+    /*min-height: 30vh;*/
     min-height: calc(var(--vh,1vh) * 30);
 
     display: flex;
@@ -863,7 +863,7 @@ main{
 /* CONTATO */
 
 #contato{
-    min-height: 80vh;
+    /*min-height: 80vh;*/
     min-height: calc(var(--vh,1vh) * 80);
     
     display: flex;
@@ -936,7 +936,7 @@ main{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    min-height: 14vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    /*min-height: 14vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
     min-height: calc(var(--vh,1vh) * 14);
 
     scroll-snap-align: end;
