@@ -8,23 +8,6 @@ const btn_tema = document.getElementById("btn_tema");
 btn_tema.addEventListener("click", MudarTemaClick);
 
 
-// Referente a var --vh que pega o tamanho da tela no mobile e ajuda aos elementos a não bugar o tamnho quando a barra do navegador sobe ou desce
-
-/*function fixMobileViewport() {
-  // Obtém 1% da altura interna real do navegador
-  const vh = window.innerHeight * 0.01;
-  // Define o valor na variável CSS --vh na raiz do documento
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-// Executa ao carregar a página
-fixMobileViewport();
-
-// Atualiza apenas se o usuário girar o celular
-window.addEventListener('orientationchange', () => {
-  // Pequeno timeout para aguardar a rotação concluir
-  setTimeout(fixMobileViewport, 200);
-});*/
 
 
 // Referente ao nav
