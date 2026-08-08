@@ -42,7 +42,7 @@ html, body{
     width: 100%;
     height: 100%;
 
-    scroll-padding-top: 6vh;
+    scroll-padding-top: calc(var(--vh,1vh) * 6);
     scroll-snap-type: y mandatory;  
 
     background-color: var(--bg-color);
@@ -50,9 +50,10 @@ html, body{
 
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 86vh;  /* 866px de altura, no maximo*/
+    min-height: 87vh;  /* 866px de altura, no maximo*/
+    min-height: calc(var(--vh,1vh) * 93);
 
-    margin-bottom: 19vh;
+    margin-bottom: calc(var(--vh,1vh) * 13);
 
     display: flex;
     flex-flow: column nowrap;
@@ -115,7 +116,8 @@ header{
 }
 #foto_hero{
     width: 60%;
-    min-height: 50vh;
+    min-height: 40vh;
+    min-height: calc(var(--vh,1vh) * 50);
 }
 .nome_hero {
     width: 90%;
@@ -141,6 +143,7 @@ nav{
     z-index: 500;
 
     min-height: 6vh;
+    min-height: calc(var(--vh,1vh) * 6);
 
     display: flex;
     flex-flow: row nowrap;
@@ -183,8 +186,9 @@ main{
 
 #perfil{
     min-height: 86vh;              /*tamanho maximo 860px*/
+    min-height: calc(var(--vh,1vh) * 94);
 
-    margin-bottom: 20vh;
+    margin-bottom: 14vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -246,8 +250,9 @@ main{
 
 #skills_tools{
     min-height: 86vh;              /*tamanho maximo 860px*/
+    min-height: calc(var(--vh,1vh) * 94);
 
-    margin-bottom: 20vh;
+    margin-bottom: 14vh;
 
     display: flex;
     flex-flow: column nowrap;
@@ -363,7 +368,7 @@ main{
     align-items: center;
 }
 .skills_icons > img{
-    height: 6vh;
+    max-height: 6vh;
     padding: 0px 15px;
     margin-bottom: 7px ;
 }
@@ -397,6 +402,7 @@ main{
 
 #projetos{
     min-height: 86vh;              /*tamanho maximo 860px*/
+    min-height: calc(var(--vh,1vh) * 94);
 
     margin-bottom: 20vh;
 
@@ -588,7 +594,8 @@ main{
 }
 .card_projeto{
     width: 90%;   /*450px*/
-    min-height: 33vh;
+    min-height: 30vh;
+    min-height: calc(var(--vh,1vh) * 30);
 
     display: flex;
     flex-flow: column nowrap;
@@ -857,6 +864,7 @@ main{
 
 #contato{
     min-height: 80vh;
+    min-height: calc(var(--vh,1vh) * 80);
     
     display: flex;
     flex-flow: column nowrap;
@@ -928,7 +936,8 @@ main{
 
 /* ------- PARTE DO RODAPÉ: FOOTER E AS INFORMAÇÕES DELE -------*/
 footer{
-    min-height: 14.7vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    min-height: 14vh;      /*esta dando uma pequena folga no final com a rolagem colante, então se continuar assim depois de subir o site, altere esse valor para 14.6dvh. Não precisa alterar o do #contato*/
+    min-height: calc(var(--vh,1vh) * 14);
 
     scroll-snap-align: end;
 
