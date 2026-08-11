@@ -46,7 +46,7 @@ html, body{
 }
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    height: 100vh;  /* 866px de altura, no maximo*/
+    height: 100svh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
@@ -55,7 +55,7 @@ header{
 
     background-color: var(--bg-color);
 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
 }
 .header_hero{
     width: 100%;    /*43px na media de altura*/    /*823*/
@@ -177,7 +177,7 @@ main{
 /* PERFIL */
 
 #perfil{
-    height: 100vh;              /*tamanho maximo 860px*/
+    min-height: 100svh;              /*tamanho maximo 860px*/
 
     padding: 13% 0px 5% 0px;
 
@@ -240,7 +240,7 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    height: 100vh;              /*tamanho maximo 860px*/
+    min-height: 100svh;              /*tamanho maximo 860px*/
 
     padding: 13% 0px 2% 0px;
     margin-top: 10vh;
@@ -391,7 +391,7 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 100vh;              /*tamanho maximo 860px*/
+    min-height: 100svh;              /*tamanho maximo 860px*/
 
     padding: 13% 0px 2% 0px;
 
@@ -425,7 +425,7 @@ main{
     font-size: 1em;
 
     padding: 5px 0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     background-color: var(--color1);
     border: 3px solid var(--cor-primaria);
