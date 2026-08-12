@@ -46,7 +46,7 @@ html, body{
 }
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    height: 100svh;  /* 866px de altura, no maximo*/
+    min-height: 100vh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
@@ -177,7 +177,7 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 100svh;              /*tamanho maximo 860px*/
+    min-height: 100vh;              /*tamanho maximo 860px*/
 
     padding: 13% 0px 5% 0px;
 
@@ -391,7 +391,7 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 100svh;              /*tamanho maximo 860px*/
+    min-height: 100vh;              /*tamanho maximo 860px*/
 
     padding: 13% 0px 2% 0px;
 
