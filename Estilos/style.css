@@ -46,7 +46,7 @@ html, body{
 }
 /* ------- PARTE DA ENTRADA : FOTO E INFORMAÇÃO DE NOME E FUNÇÃO -------*/
 header{
-    min-height: 100vh;  /* 866px de altura, no maximo*/
+    min-height: 87vh;  /* 866px de altura, no maximo*/
 
     display: flex;
     flex-flow: column nowrap;
@@ -59,14 +59,13 @@ header{
 }
 .header_hero{
     width: 100%;    /*43px na media de altura*/    /*823*/
-    min-height: 8%;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0px 20px;
+    padding: 7px 20px;
     background-color: var(--cor-primaria);
 }
 .header_hero span{
@@ -104,13 +103,13 @@ header{
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    padding: 5% 2px 17% 2px;
+    padding: 2px;
 
     flex: 1;
 }
 #foto_hero{
     width: 60%;
-    min-height: 70%;
+    min-height: 50vh;
 }
 .nome_hero {
     width: 90%;
@@ -177,9 +176,9 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 100vh;              /*tamanho maximo 860px*/
+    min-height: 86vh;              /*tamanho maximo 860px*/
 
-    padding: 13% 0px 5% 0px;
+    padding: 25px 0px;
 
     margin-top: 10vh;
 
@@ -240,9 +239,9 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    min-height: 100svh;              /*tamanho maximo 860px*/
+    min-height: 86vh;              /*tamanho maximo 860px*/
 
-    padding: 13% 0px 2% 0px;
+    padding: 25px 0px;
     margin-top: 10vh;
 
     display: flex;
@@ -391,9 +390,9 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 100vh;              /*tamanho maximo 860px*/
+    min-height: 86vh;              /*tamanho maximo 860px*/
 
-    padding: 13% 0px 2% 0px;
+    padding: 25px 0px;
 
     margin-top: 10vh;
 
