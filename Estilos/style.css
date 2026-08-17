@@ -56,6 +56,8 @@ header{
     background-color: var(--bg-color);
 
     scroll-snap-align: start;
+
+    transition: height 0.5s ease;
 }
 .header_hero{
     width: 100%;    /*43px na media de altura*/    /*823*/
@@ -192,6 +194,8 @@ main{
     color: var(--color2);
 
     background-color: var(--bg-color);
+
+    transition: height 0.5s ease;
 }
 #perfil > h2 {
     text-align: center;
@@ -248,12 +252,14 @@ main{
     flex-flow: column nowrap;
     justify-content: space-evenly;
 
-    scroll-snap-align: end;
+    scroll-snap-align: center;
 
     color: var(--color2);
 
     background-color: var(--bg-color);
     overflow: hidden;         /* esconde os skills_cards que não estão na tela*/
+
+    transition: height 0.5s ease;
 }
 #skills_tools > h2 {
     text-align: center;
@@ -354,12 +360,12 @@ main{
     justify-content: center;
     align-items: center;
 
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0px;
 }
 .skills_icons > img{
     max-height: 6vh;
     padding: 0px 15px;
-    margin-bottom: 7px ;
+    margin-bottom: 5px ;
 }
 
 .skills_bolinhas_container {
@@ -401,12 +407,14 @@ main{
     justify-content: space-evenly;
     align-items: center;
 
-    scroll-snap-align: end;
+    scroll-snap-align: center;
 
     color: var(--color2);
 
     background-color: var(--bg-color);
     overflow: hidden;       /* esconde os .lista_projetos que não estão na tela*/
+
+    transition: height 0.5s ease;
 }
 #projetos > h2 {
     text-align: center;
