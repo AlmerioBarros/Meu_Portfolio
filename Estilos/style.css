@@ -180,7 +180,7 @@ main{
 #perfil{
     min-height: 86vh;              /*tamanho maximo 860px*/
 
-    padding: 25px 0px;
+    padding: 25px 0px 0px 0px;
 
     margin-top: 10vh;
 
@@ -245,7 +245,7 @@ main{
 #skills_tools{
     min-height: 86vh;              /*tamanho maximo 860px*/
 
-    padding: 25px 0px;
+    padding: 25px 0px 0px 0px;
     margin-top: 10vh;
 
     display: flex;
@@ -398,7 +398,7 @@ main{
 #projetos{
     min-height: 86vh;              /*tamanho maximo 860px*/
 
-    padding: 25px 0px;
+    padding: 25px 0px 0px 0px;
 
     margin-top: 10vh;
 
