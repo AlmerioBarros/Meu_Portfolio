@@ -178,9 +178,9 @@ main{
 /* PERFIL */
 
 #perfil{
-    min-height: 86vh;              /*tamanho maximo 860px*/
+    min-height: 87vh;              /*tamanho maximo 860px*/
 
-    padding: 30px 0px 0px 0px;
+    padding: 35px 0px 0px 0px;
 
     margin-top: 10vh;
 
@@ -243,9 +243,9 @@ main{
 /* SKILLS E TOOLS*/
 
 #skills_tools{
-    min-height: 86vh;              /*tamanho maximo 860px*/
+    min-height: 87vh;              /*tamanho maximo 860px*/
 
-    padding: 30px 0px 0px 0px;
+    padding: 35px 0px 0px 0px;
     margin-top: 10vh;
 
     display: flex;
@@ -396,9 +396,9 @@ main{
 /* PROJETOS */
 
 #projetos{
-    min-height: 86vh;              /*tamanho maximo 860px*/
+    min-height: 87vh;              /*tamanho maximo 860px*/
 
-    padding: 30px 0px 0px 0px;
+    padding: 35px 0px 0px 0px;
 
     margin-top: 10vh;
 
