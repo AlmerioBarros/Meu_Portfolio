@@ -13,7 +13,7 @@
 :root{
     --color1: white;
     --color2: black;
-    --bg-color: white;
+    --bg-color: #f1f9ff ;
     --bg-color2: rgba(226, 226, 226, 0.76);
     --bg-color3: #50b6ff ;
     --cor-primaria: #0077cc;    /*#0077cc*/
@@ -26,7 +26,7 @@
 .dark{
     --color1: black;
     --color2: rgb(236, 236, 236);
-    --bg-color: black;
+    --bg-color: #1f001f;
     --bg-color2: rgba(100, 100, 100, 0.849);
     --bg-color3: #610061;
     --cor-primaria: #610061;    /*#004C81*/
@@ -68,10 +68,11 @@ header{
     align-items: center;
 
     padding: 7px 20px;
-    background-color: var(--cor-primaria);
+    background-color: var(--bg-color);
+    border-bottom: 2px solid var(--cor-primaria);
 }
 .header_hero span{
-    color: var(--white-t);
+    color: var(--cor-primaria);
 } 
 #btn_tema{
     cursor: pointer;
@@ -81,19 +82,19 @@ header{
     align-items: center;
 
     border-radius: 15px;
-    border: 2px solid var(--white-t) ;
+    border: 2px solid var(--cor-primaria) ;
     overflow: hidden;
 }
 #sol{
     padding: 3px 5px;
-    color: var(--white-t);
+    color: var(--cor-primaria);
 
     font-size: 1.3em;
     opacity: 1;
 }
 #lua{
     padding: 3px 5px;
-    color: var(--white-t);
+    color: var(--cor-primaria);
 
     font-size: 1.1em;
     opacity: 0.4;
@@ -109,9 +110,18 @@ header{
 
     flex: 1;
 }
-#foto_hero{
+.container_foto_hero{
     width: 60%;
     min-height: 50vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#foto_hero{
+    width: 100%;
+    flex: 1;
 }
 .nome_hero {
     width: 90%;
@@ -136,27 +146,37 @@ nav{
     width: 100%;
     z-index: 500;
 
-    min-height: 6%;
+    min-height: 8vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.container_nav{
+    width: 98%;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-
-    background-color: var(--cor-primaria);
-    color: var(--white-t);
 
     font-weight: bold;
 
+    border: 2px solid var(--cor-primaria);
+    border-radius: 15px;
+
+    background-color: var(--bg-color);
+    color: var(--cor-primaria);
 }
-nav > div{
+.container_nav > div{
     border-radius: 10px;
-    padding: 8px 5px;
-}
-nav > div.ativo{
-    background-color: var(--cor-secundaria);
+    padding: 10px 5px;
+
     cursor: pointer;
+}
+.container_nav > div.ativo{
+    text-decoration: underline;
 }
 nav.top{
     top: 0;
@@ -213,7 +233,7 @@ main{
     flex: 1;
     margin-bottom: 10px;
 
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color);
 }
 .descricao_texto{
     width: 100%;
@@ -278,8 +298,6 @@ main{
 
     flex: 1;
 
-    border-top: 3px solid var(--color2);
-    border-bottom: 3px solid var(--color2);
 }
 .skills_card {
     width: 100%;
@@ -290,16 +308,16 @@ main{
     padding: 10px;
 }
 .skills_card.web{
-    background-color: rgba(185, 0, 0, 0.918);
+    border: 2px solid rgba(185, 0, 0, 0.918);
 }
 .skills_card.app{
-    background-color: rgba(0, 165, 0, 0.925);
+    border: 2px solid rgba(0, 165, 0, 0.925);
 }
 .skills_card.api{
-    background-color: #ffe101ea;
+    border: 2px solid #ffe101ea;
 }
 .skills_card.art{
-    background-color: #a76900e5;
+    border: 2px solid #a76900e5;
 }
 .skills_card_titulo{
     width: 50%;
